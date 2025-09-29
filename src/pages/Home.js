@@ -380,17 +380,17 @@ const Home = () => {
           
           <div className="grid md:grid-cols-3 gap-12">
             {[
-              { name: "Rashid Ali", position: "Chairman", image: "./Rashid.png" },
-              { name: "Furqan Ahmed Soomro", position: "Managing Director & CEO", image: "./Furqan_Ahmed.png" },
-              { name: "Adnan Ali Soomro", position: "Executive Director", image: "./AdnanAli.png" }
+              { name: "Furqan Ahmed Soomro", position: "Principal Partner  and Managing Director", image: "./Furqan_Ahmed.png" },
+              { name: "Adnan Ali Soomro", position: "Associate Partner", image: "./AdnanAli.png" },
+              { name: "Muhammad Rashid", position: "General Manager", image: "./Rashid.png" }
             ].map((leader, i) => (
               <div key={i} className="fade-in-up" style={{animationDelay: `${i * 0.15}s`}}>
                 <div className="group relative">
-                  <div className="leadership-image aspect-square rounded-3xl overflow-hidden mb-6 hover-lift shadow-2xl">
+                  <div className="leadership-image  aspect-square rounded-3xl overflow-hidden mb-6 hover-lift shadow-2xl">
                     <img
                       src={leader.image}
                       alt={leader.name}
-                      className="w-full h-full object-cover  transition-all duration-500 group-hover:scale-110"
+                      className="w-full h-full object-center  transition-all duration-500 group-hover:scale-110"
                     />
                   </div>
                   <div className="text-center">
