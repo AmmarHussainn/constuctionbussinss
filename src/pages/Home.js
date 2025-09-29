@@ -17,6 +17,7 @@ import {
   Star,
   ChevronRight,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const bgVideo = "./loop.mp4";
 const bgImage1 = "./1.png";
@@ -322,13 +323,17 @@ const Home = () => {
           </p>
           
           <div className="fade-in-up flex flex-col sm:flex-row gap-6 justify-center stagger-4">
-            <button className="group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl hover:shadow-yellow-400/50">
+            <Link 
+            to="/projects"
+            className="group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl hover:shadow-yellow-400/50">
               View Our Projects 
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} />
-            </button>
-            <button className="px-10 py-5 border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 shadow-2xl">
-              Get Quote
-            </button>
+            </Link>
+            <Link 
+            to="/contact"
+            className="px-10 py-5 border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 shadow-2xl">
+              Contact Us
+            </Link>
           </div>
         </div>
 
@@ -650,10 +655,12 @@ const Home = () => {
                     </div>
                     
                     {/* CTA Button */}
-                    <button className="group/btn w-full py-4 bg-gray-50 hover:bg-yellow-400 text-gray-900 rounded-2xl font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all duration-300">
+                    <Link
+                    to="/services"
+                    className="group/btn w-full py-4 bg-gray-50 hover:bg-yellow-400 text-gray-900 rounded-2xl font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all duration-300">
                       Explore Service
                       <ArrowRight className="group-hover/btn:translate-x-1 transition-transform" size={18} strokeWidth={2.5} />
-                    </button>
+                    </Link>
                   </div>
                   
                   {/* Hover effect line */}
