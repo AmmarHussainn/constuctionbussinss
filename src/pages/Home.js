@@ -337,13 +337,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white opacity-60 animate-bounce">
-          <div className="flex flex-col items-center gap-2">
-            <span className="text-xs uppercase tracking-widest">Scroll</span>
-            <ChevronRight className="rotate-90" size={20} />
-          </div>
-        </div>
+       
       </section>
 
       {/* STATS SECTION */}
@@ -378,11 +372,11 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-2 gap-12">
             {[
               { name: "Furqan Ahmed Soomro", position: "Principal Partner  and Managing Director", image: "./Furqan_Ahmed.png" },
               { name: "Adnan Ali Soomro", position: "Associate Partner", image: "./AdnanAli.png" },
-              { name: "Muhammad Rashid", position: "General Manager", image: "./Rashid.png" }
+              // { name: "Muhammad Rashid", position: "General Manager", image: "./Rashid.png" }
             ].map((leader, i) => (
               <div key={i} className="fade-in-up" style={{animationDelay: `${i * 0.15}s`}}>
                 <div className="group relative">
