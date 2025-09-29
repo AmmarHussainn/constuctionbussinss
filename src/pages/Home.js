@@ -340,22 +340,7 @@ const Home = () => {
        
       </section>
 
-      {/* STATS SECTION */}
-      <section className="py-20 bg-gray-50 relative">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, i) => (
-              <div key={i} className="fade-in-up text-center" style={{animationDelay: `${i * 0.1}s`}}>
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-yellow-400 bg-opacity-10 mb-4">
-                  <stat.icon className="text-yellow-400" size={28} strokeWidth={2} />
-                </div>
-                <div className="text-4xl md:text-5xl font-black text-gray-900 mb-2">{stat.number}</div>
-                <div className="text-sm md:text-base text-gray-600 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* LEADERSHIP SECTION */}
       <section className="section-padding bg-white">
@@ -372,7 +357,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
             {[
               { name: "Furqan Ahmed Soomro", position: "Principal Partner  and Managing Director", image: "./Furqan_Ahmed.png" },
               { name: "Adnan Ali Soomro", position: "Associate Partner", image: "./AdnanAli.png" },
@@ -396,6 +381,23 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+       {/* STATS SECTION */}
+      <section className="py-20 bg-gray-50 relative">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, i) => (
+              <div key={i} className="fade-in-up text-center" style={{animationDelay: `${i * 0.1}s`}}>
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-yellow-400 bg-opacity-10 mb-4">
+                  <stat.icon className="text-yellow-400" size={28} strokeWidth={2} />
+                </div>
+                <div className="text-4xl md:text-5xl font-black text-gray-900 mb-2">{stat.number}</div>
+                <div className="text-sm md:text-base text-gray-600 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
