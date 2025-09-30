@@ -8,6 +8,8 @@ import {
   Play,
   Pause,
   TrendingUp,
+   Building2,
+  DollarSign,
   Shield,
   Target,
   Zap,
@@ -56,11 +58,11 @@ const Home = () => {
     return () => observer.disconnect();
   }, []);
 
-  const stats = [
-    { number: "30+", label: "Years Experience", icon: Calendar },
-    { number: "500+", label: "Projects Completed", icon: CheckCircle },
-    { number: "50+", label: "Expert Team", icon: Users },
-    { number: "98%", label: "Client Satisfaction", icon: Award },
+ const stats = [
+    { value: 47, label: "Total Projects", icon: Award },
+    { value: "Rs. 18.5B+", label: "Portfolio Value", icon: DollarSign },
+    { value: "100%", label: "Completion Rate", icon: TrendingUp },
+    { value: "World Bank", label: "International Funding", icon: Building2 },
   ];
 
   const services = [
@@ -455,7 +457,24 @@ const Home = () => {
       </section>
 
        {/* STATS SECTION */}
-      <section className="py-20 bg-gray-50 relative">
+       <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-2  lg:grid-cols-4 gap-8">
+            {stats.map((stat, i) => (
+              <div key={i} className="fade-in-up text-center rounded-3xl hover-lift" style={{ animationDelay: `${i * 0.1}s` }}>
+                <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-yellow-400 bg-opacity-10 mb-4">
+                    <stat.icon className="text-yellow-400" size={28} strokeWidth={2} />
+                  </div>
+                  <div className="text-3xl md:text-4xl font-black text-gray-900 mb-2">{stat.value}</div>
+                  <div className="text-sm md:text-base text-gray-600 font-medium">{stat.label}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* <section className="py-20 bg-gray-50 relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
@@ -469,7 +488,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* OUR STORY */}
       <section className="section-padding bg-gray-50 relative overflow-hidden">

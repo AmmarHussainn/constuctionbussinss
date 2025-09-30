@@ -17,7 +17,8 @@ import {
   Shield,
   Locate,
   LocateIcon,
-  LocationEdit
+  LocationEdit,
+  Cog
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -756,7 +757,7 @@ const Projects = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
             {stats.map((stat, i) => (
-              <div key={i} className="fade-in-up text-center hover-lift" style={{ animationDelay: `${i * 0.1}s` }}>
+              <div key={i} className="fade-in-up text-center rounded-3xl hover-lift" style={{ animationDelay: `${i * 0.1}s` }}>
                 <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-yellow-400 bg-opacity-10 mb-4">
                     <stat.icon className="text-yellow-400" size={28} strokeWidth={2} />
@@ -922,8 +923,9 @@ const Projects = () => {
 
                         {/* Status Indicator */}
                         <div className="flex items-center gap-2 pt-4 border-t border-gray-100">
-                          <CheckCircle className="text-green-600" size={20} strokeWidth={2.5} />
-                          <span className="text-green-700 font-bold text-sm">Successfully Delivered</span>
+                         {project.endingYear == "2026" ? <Cog className="text-green-700" size={20} strokeWidth={2.5} /> : <CheckCircle className="text-green-700" size={20} strokeWidth={2.5} />}
+                         
+                          <span className="text-green-700 font-bold text-sm">{project.endingYear == "2026" ? "Ongoing" : "Successfully Delivered"}</span>
                         </div>
                       </div>
                     </div>
