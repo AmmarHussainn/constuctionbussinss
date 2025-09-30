@@ -356,14 +356,14 @@ const Home = () => {
             <img
               src="./Founder.png"
               alt="Bashir Ahmed - Founder"
-              className="w-full aspect-square object-contain rounded-3xl overflow-hidden shadow-2xl hover-scale"
+              className="w-full aspect-square object-contain rounded-3xl overflow-hidden  hover-scale"
             />
         
 
           {/* Decorative quote mark */}
-          <div className="absolute -top-6 -left-6 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center text-gray-900 text-6xl font-serif leading-none">
+          {/* <div className="absolute -top-6 -left-6 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center text-gray-900 text-6xl font-serif leading-none">
             "
-          </div>
+          </div> */}
         </div>
       </div>
 

@@ -7,9 +7,11 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Header from './components/Heaer';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-white">
         <Header />
         <main>

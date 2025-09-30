@@ -229,11 +229,11 @@ const Contact = () => {
         </div>
 
         {/* Floating Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="floating absolute top-20 left-20 w-24 h-24 border-2 border-yellow-400 opacity-20 rounded-2xl"></div>
           <div className="floating absolute top-40 right-40 w-20 h-20 border-2 border-yellow-400 opacity-30 rounded-full" style={{animationDelay: '2s'}}></div>
           <div className="floating absolute bottom-32 left-1/3 w-16 h-16 border-2 border-yellow-400 opacity-25 rounded-lg" style={{animationDelay: '4s'}}></div>
-        </div>
+        </div> */}
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <div className="fade-in-up mb-6">
