@@ -62,7 +62,7 @@ const Home = () => {
     { value: 47, label: "Total Projects", icon: Award },
     { value: "Rs. 18.5B+", label: "Portfolio Value", icon: DollarSign },
     { value: "100%", label: "Completion Rate", icon: TrendingUp },
-    { value: "World Bank", label: "International Funding", icon: Building2 },
+    // { value: "World Bank", label: "International Funding", icon: Building2 },
   ];
 
   const services = [
@@ -459,7 +459,7 @@ const Home = () => {
        {/* STATS SECTION */}
        <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-2  lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
             {stats.map((stat, i) => (
               <div key={i} className="fade-in-up text-center rounded-3xl hover-lift" style={{ animationDelay: `${i * 0.1}s` }}>
                 <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
