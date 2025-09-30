@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { 
   CheckCircle, 
   ArrowRight, 
@@ -12,121 +11,179 @@ import {
   Layers,
   Droplet,
   Building2,
-  Eye
+  DollarSign,
+  Users,
+  Clock,
+  Briefcase,
+  Target,
+  FileText
 } from "lucide-react";
-
-const bgImage = "./projectbanner.png";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [filteredProjects, setFilteredProjects] = useState([]);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
     {
-      title: "Major Irrigation Canal System - Sindh Province",
+      id: 1,
+      serialNo: "01",
+      title: "Construction of Link Road from Mehran Hotel to Allah Dino Chandio Pump",
+      category: "Infrastructure",
+      client: "Irrigation Department, Government of Sindh",
+      cost: "Rs. 41,300,000/-",
+      duration: "2010-2011",
+      location: "Sindh",
+      status: "Completed",
+      icon: Building2,
+      gradient: "from-blue-500 to-cyan-500"
+    },
+    {
+      id: 2,
+      serialNo: "02",
+      title: "Widening of Ferozabad Road",
+      category: "Infrastructure",
+      client: "Provincial Highway Sukkur, Government of Sindh",
+      cost: "Rs. 17,000,000/-",
+      duration: "2011-2012",
+      location: "Sukkur, Sindh",
+      status: "Completed",
+      icon: Building2,
+      gradient: "from-purple-500 to-pink-500"
+    },
+    {
+      id: 3,
+      serialNo: "03",
+      title: "Construction of Link Road from Mehran Hotel to Khairpur Road Bridge",
+      category: "Infrastructure",
+      client: "Provincial Highway Sukkur, Government of Sindh",
+      cost: "Rs. 65,000,000/-",
+      duration: "2011-2012",
+      location: "Sukkur, Sindh",
+      status: "Completed",
+      icon: Building2,
+      gradient: "from-orange-500 to-red-500"
+    },
+    {
+      id: 4,
+      serialNo: "04",
+      title: "Re-Sectioning, Lining & C/W of Taluka Minor",
+      category: "Water Management",
+      client: "Irrigation Department, Government of Sindh",
+      cost: "Rs. 102,000,000/-",
+      duration: "2012-2013",
+      location: "Sindh",
+      status: "Completed",
+      icon: Droplet,
+      gradient: "from-teal-500 to-green-500"
+    },
+    {
+      id: 5,
+      serialNo: "05",
+      title: "Lining of Pangrio Branch Canals (RD 10000 to 17000)",
       category: "Irrigation Infrastructure",
-      description:
-        "Construction of a 50km irrigation canal system serving over 10,000 acres of agricultural land, including main canals, distributaries, and water control structures.",
+      client: "Irrigation Department, Government of Sindh",
+      cost: "Rs. 85,130,000/-",
+      duration: "2013-2014",
+      location: "Pangrio, Sindh",
       status: "Completed",
-      year: "2023",
-      location: "Sindh Province",
-      features: [
-        "50km Main Canal",
-        "15 Distributaries",
-        "Water Control Gates",
-        "Concrete Lining",
-      ],
-      image: "/1.png",
       icon: Droplet,
+      gradient: "from-blue-600 to-indigo-600"
     },
     {
-      title: "Small Dam Construction - Balochistan",
-      category: "Water Management",
-      description:
-        "Development of small dam facility with 5 million cubic meter capacity for water storage and irrigation purposes in drought-prone areas.",
+      id: 6,
+      serialNo: "06",
+      title: "Lining of Pangrio Branch Canals (RD 17000 to 24000)",
+      category: "Irrigation Infrastructure",
+      client: "Irrigation Department, Government of Sindh",
+      cost: "Rs. 86,300,000/-",
+      duration: "2013-2014",
+      location: "Pangrio, Sindh",
       status: "Completed",
-      year: "2022",
-      location: "Balochistan",
-      image: "/2.jpg",
-      features: [
-        "5M Cubic Meter Capacity",
-        "Spillway Construction",
-        "Embankment Work",
-        "Instrumentation",
-      ],
+      icon: Droplet,
+      gradient: "from-cyan-500 to-blue-500"
+    },
+    {
+      id: 7,
+      serialNo: "07",
+      title: "C/W of Bhagat Dodo Pump",
+      category: "Water Management",
+      client: "Irrigation Department, Government of Sindh",
+      cost: "Rs. 33,580,000/-",
+      duration: "2014-2015",
+      location: "Sindh",
+      status: "Completed",
       icon: Layers,
+      gradient: "from-emerald-500 to-teal-500"
     },
     {
-      title: "Urban Infrastructure Development - Hyderabad",
-      category: "Infrastructure",
-      description:
-        "Comprehensive urban infrastructure project including road construction, drainage systems, and utility installations across multiple sectors.",
+      id: 8,
+      serialNo: "08",
+      title: "Improvement in Canal Lining (Akram Wah + Jamrao Branch)",
+      category: "Irrigation Infrastructure",
+      client: "Irrigation Department, Government of Sindh",
+      cost: "Rs. 116,290,000/-",
+      duration: "2019-2020",
+      location: "Sindh",
       status: "Completed",
-      year: "2023",
-      location: "Hyderabad",
-      image: "/3.png",
-      features: [
-        "Road Networks",
-        "Drainage Systems",
-        "Utility Infrastructure",
-        "Traffic Management",
-      ],
-      icon: Building2,
-    },
-    {
-      title: "Canal Lining Project - Punjab",
-      category: "Water Management",
-      description:
-        "Extensive canal lining project covering 75km of irrigation canals to reduce water losses and improve irrigation efficiency.",
-      status: "In Progress",
-      year: "2024",
-      location: "Punjab",
-      image: "/4.png",
-      features: [
-        "75km Canal Lining",
-        "Concrete Structures",
-        "Water Conservation",
-        "Efficiency Improvement",
-      ],
       icon: Droplet,
+      gradient: "from-violet-500 to-purple-500"
     },
     {
-      title: "Bridge Construction - KPK Province",
-      category: "Infrastructure",
-      description:
-        "Construction of reinforced concrete bridge spanning 200 meters over major river, connecting rural communities to urban centers.",
+      id: 9,
+      serialNo: "09",
+      title: "Improvement of Canal Lining (Akram Wah RD 10000 to 19000)",
+      category: "Irrigation Infrastructure",
+      client: "Irrigation Department, Government of Sindh",
+      cost: "Rs. 104,140,000/-",
+      duration: "2018-2019",
+      location: "Sindh",
       status: "Completed",
-      year: "2022",
-      location: "KPK Province",
-      image: "/5.png",
-      features: [
-        "200m Span Bridge",
-        "Reinforced Concrete",
-        "Foundation Work",
-        "Safety Features",
-      ],
-      icon: Building2,
+      icon: Droplet,
+      gradient: "from-pink-500 to-rose-500"
     },
     {
-      title: "Water Treatment Facility - Karachi",
-      category: "Water Management",
-      description:
-        "Modern water treatment plant with capacity to process 50 million gallons per day, serving industrial and residential areas.",
-      status: "In Progress",
-      year: "2024",
-      location: "Karachi",
-      image: "/6.png",
-      features: [
-        "50MGD Capacity",
-        "Modern Technology",
-        "Quality Control",
-        "Environmental Compliance",
-      ],
+      id: 10,
+      serialNo: "10",
+      title: "Improvement in Canal Lining (Akram Wah + Jamrao Branch + Rohri Canal)",
+      category: "Irrigation Infrastructure",
+      client: "Irrigation Department, Government of Sindh",
+      cost: "Rs. 111,000,000/-",
+      duration: "2019-2020",
+      location: "Sindh",
+      status: "Completed",
       icon: Droplet,
+      gradient: "from-amber-500 to-orange-500"
+    },
+    {
+      id: 11,
+      serialNo: "11",
+      title: "Lining Improvement (Akram Wah RD 0 to 10000)",
+      category: "Irrigation Infrastructure",
+      client: "Irrigation Department, Government of Sindh",
+      cost: "Rs. 113,430,000/-",
+      duration: "2019-2020",
+      location: "Sindh",
+      status: "Completed",
+      icon: Droplet,
+      gradient: "from-lime-500 to-green-500"
+    },
+    {
+      id: 12,
+      serialNo: "12",
+      title: "Lining Improvement (Akram Wah + Rohri Canal)",
+      category: "Irrigation Infrastructure",
+      client: "Irrigation Department, Government of Sindh",
+      cost: "Rs. 103,280,000/-",
+      duration: "2020-2021",
+      location: "Sindh",
+      status: "Completed",
+      icon: Droplet,
+      gradient: "from-sky-500 to-blue-500"
     },
   ];
 
-  const filters = ["All", "Irrigation Infrastructure", "Water Management", "Infrastructure"];
+  const filters = ["All", "Infrastructure", "Water Management", "Irrigation Infrastructure"];
 
   useEffect(() => {
     if (activeFilter === "All") {
@@ -155,11 +212,17 @@ const Projects = () => {
     return () => observer.disconnect();
   }, [filteredProjects]);
 
+  // Calculate total project value
+  const totalValue = projects.reduce((sum, p) => {
+    const value = parseInt(p.cost.replace(/[^0-9]/g, ''));
+    return sum + value;
+  }, 0);
+
   const stats = [
-    { value: "100+", label: "Projects Completed", icon: Award },
-    { value: "30+", label: "Years Experience", icon: Calendar },
-    { value: "50+", label: "Government Projects", icon: Building2 },
-    { value: "95%", label: "Client Satisfaction", icon: TrendingUp },
+    { value: "12", label: "Major Projects", icon: Award },
+    { value: `Rs. ${(totalValue / 100000000).toFixed(1)}B`, label: "Total Value", icon: DollarSign },
+    { value: "2", label: "Key Clients", icon: Briefcase },
+    { value: "100%", label: "Success Rate", icon: TrendingUp },
   ];
 
   return (
@@ -187,15 +250,7 @@ const Projects = () => {
         }
         
         .hover-lift:hover {
-          transform: translateY(-12px);
-        }
-        
-        .project-card-image {
-          transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        
-        .project-card:hover .project-card-image {
-          transform: scale(1.1);
+          transform: translateY(-8px);
         }
         
         .filter-btn {
@@ -205,6 +260,7 @@ const Projects = () => {
         .filter-btn.active {
           background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
           color: #1F2937;
+          box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);
         }
         
         .section-padding {
@@ -217,12 +273,8 @@ const Projects = () => {
           }
         }
         
-        .hero-overlay {
-          background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
-        }
-        
-        .status-badge {
-          backdrop-filter: blur(10px);
+        .hero-gradient {
+          background: linear-gradient(135deg, #1F2937 0%, #374151 50%, #1F2937 100%);
         }
         
         .stagger-1 { animation-delay: 0.1s; }
@@ -238,14 +290,49 @@ const Projects = () => {
           0%, 100% { transform: translateY(0px) rotate(0deg); }
           50% { transform: translateY(-20px) rotate(5deg); }
         }
+        
+        .project-number {
+          font-size: 120px;
+          font-weight: 900;
+          line-height: 1;
+          opacity: 0.05;
+          position: absolute;
+          top: -20px;
+          right: 20px;
+        }
+        
+        .gradient-border {
+          position: relative;
+        }
+        
+        .gradient-border::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          border-radius: inherit;
+          padding: 2px;
+          background: linear-gradient(135deg, #FBBF24, #F59E0B);
+          -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          -webkit-mask-composite: xor;
+          mask-composite: exclude;
+          opacity: 0;
+          transition: opacity 0.4s ease;
+        }
+        
+        .gradient-border:hover::before {
+          opacity: 1;
+        }
       `}</style>
 
       {/* HERO SECTION */}
-      <section 
-        className="relative min-h-[70vh] flex items-center justify-center overflow-hidden"
-        style={{ backgroundImage: `url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-      >
-        <div className="absolute inset-0 hero-overlay"></div>
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden hero-gradient">
+        {/* Animated grid background */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'linear-gradient(rgba(251, 191, 36, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(251, 191, 36, 0.1) 1px, transparent 1px)',
+            backgroundSize: '50px 50px'
+          }}></div>
+        </div>
         
         {/* Floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -257,23 +344,23 @@ const Projects = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <div className="fade-in-up mb-6">
             <div className="inline-block px-4 py-2 bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-full mb-8">
-              <span className="text-yellow-400 text-sm font-semibold tracking-wide">OUR PORTFOLIO</span>
+              <span className="text-yellow-400 text-sm font-semibold tracking-wide">GENERAL EXPERIENCE</span>
             </div>
           </div>
           
           <h1 className="fade-in-up text-5xl md:text-7xl font-black text-white mb-6 leading-tight stagger-1">
-            Our <span className="text-yellow-400">Projects</span>
+            Project <span className="text-yellow-400">Portfolio</span>
           </h1>
           
-          <p className="fade-in-up text-lg md:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed stagger-2">
-            Showcasing excellence through successful completion of diverse civil construction and infrastructure projects across Pakistan
+          <p className="fade-in-up text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed stagger-2">
+            M/S HBAS & CO - Comprehensive showcase of successfully completed government projects across Sindh Province
           </p>
         </div>
 
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white opacity-60 animate-bounce">
           <div className="flex flex-col items-center gap-2">
-            <span className="text-xs uppercase tracking-widest">Explore</span>
+            <span className="text-xs uppercase tracking-widest">Scroll Down</span>
             <ChevronRight className="rotate-90" size={20} />
           </div>
         </div>
@@ -289,7 +376,7 @@ const Projects = () => {
                   <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-yellow-400 bg-opacity-10 mb-4">
                     <stat.icon className="text-yellow-400" size={28} strokeWidth={2} />
                   </div>
-                  <div className="text-4xl md:text-5xl font-black text-gray-900 mb-2">{stat.value}</div>
+                  <div className="text-3xl md:text-4xl font-black text-gray-900 mb-2">{stat.value}</div>
                   <div className="text-sm md:text-base text-gray-600 font-medium">{stat.label}</div>
                 </div>
               </div>
@@ -299,12 +386,15 @@ const Projects = () => {
       </section>
 
       {/* FILTER SECTION */}
-      <section className="py-16 bg-white sticky top-0 z-40 border-b border-gray-100 shadow-sm">
+      <section className="py-16 bg-white sticky top-0 z-40 border-b border-gray-100 shadow-sm backdrop-blur-lg bg-white bg-opacity-95">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between flex-wrap gap-6">
             <div className="flex items-center gap-3">
               <Filter className="text-gray-400" size={20} />
-              <span className="text-gray-900 font-bold text-lg">Filter Projects</span>
+              <span className="text-gray-900 font-bold text-lg">Filter by Category</span>
+              <span className="px-3 py-1 bg-yellow-400 text-gray-900 rounded-full text-sm font-bold">
+                {filteredProjects.length}
+              </span>
             </div>
             <div className="flex flex-wrap gap-3">
               {filters.map((filter, i) => (
@@ -313,7 +403,7 @@ const Projects = () => {
                   onClick={() => setActiveFilter(filter)}
                   className={`filter-btn px-6 py-3 rounded-full font-semibold text-sm border-2 ${
                     activeFilter === filter
-                      ? 'active shadow-lg'
+                      ? 'active'
                       : 'border-gray-200 text-gray-700 hover:border-yellow-400 hover:text-yellow-400 bg-white'
                   }`}
                 >
@@ -325,101 +415,157 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* PROJECTS GRID */}
+      {/* PROJECTS LIST */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div className="space-y-6">
             {filteredProjects.map((project, i) => (
               <div
-                key={i}
-                className="fade-in-up project-card group"
-                style={{animationDelay: `${i * 0.1}s`}}
+                key={project.id}
+                className="fade-in-up group"
+                style={{animationDelay: `${i * 0.05}s`}}
               >
-                <div className="bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover-lift">
-                  {/* Image Section */}
-                  <div className="relative h-80 overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover project-card-image"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60"></div>
-                    
-                    {/* Icon Badge */}
-                    <div className="absolute top-6 left-6">
-                      <div className="w-14 h-14 bg-yellow-400 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <project.icon className="text-gray-900" size={28} strokeWidth={2.5} />
-                      </div>
-                    </div>
-                    
-                    {/* Status & Year */}
-                    <div className="absolute top-6 right-6 flex flex-col gap-2">
-                      <span className={`status-badge px-4 py-2 rounded-full text-xs font-bold ${
-                        project.status === "Completed"
-                          ? "bg-green-500 text-white"
-                          : "bg-yellow-400 text-gray-900"
-                      }`}>
-                        {project.status}
-                      </span>
-                      <span className="status-badge bg-white/20 backdrop-blur-md text-white px-4 py-2 rounded-full text-xs font-bold border border-white/30">
-                        {project.year}
-                      </span>
-                    </div>
-                    
-                    {/* Category Badge */}
-                    <div className="absolute bottom-6 left-6">
-                      <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-md border border-white/30 rounded-full text-white text-sm font-semibold">
-                        {project.category}
-                      </span>
-                    </div>
+                <div className="relative gradient-border bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover-lift">
+                  {/* Large background number */}
+                  <div className={`project-number bg-gradient-to-br ${project.gradient} bg-clip-text text-transparent`}>
+                    {project.serialNo}
                   </div>
                   
-                  {/* Content Section */}
-                  <div className="p-8">
-                    {/* Location */}
-                    <div className="flex items-center gap-2 text-yellow-400 mb-4">
-                      <MapPin size={18} strokeWidth={2} />
-                      <span className="text-sm font-semibold">{project.location}</span>
-                    </div>
-                    
-                    {/* Title */}
-                    <h3 className="text-2xl font-black text-gray-900 mb-4 leading-tight group-hover:text-yellow-400 transition-colors">
-                      {project.title}
-                    </h3>
-                    
-                    {/* Description */}
-                    <p className="text-gray-600 leading-relaxed mb-6">
-                      {project.description}
-                    </p>
-                    
-                    {/* Features Grid */}
-                    <div className="mb-6">
-                      <h4 className="text-sm font-bold text-gray-900 mb-3 uppercase tracking-wide">Project Highlights</h4>
-                      <div className="grid grid-cols-2 gap-3">
-                        {project.features.map((feature, fi) => (
-                          <div key={fi} className="flex items-start gap-2">
-                            <div className="flex-shrink-0 w-5 h-5 bg-yellow-400 bg-opacity-20 rounded-full flex items-center justify-center mt-0.5">
-                              <CheckCircle className="text-yellow-400" size={14} strokeWidth={3} />
-                            </div>
-                            <span className="text-sm text-gray-700 font-medium leading-tight">{feature}</span>
+                  <div className="relative z-10 p-8">
+                    <div className="grid md:grid-cols-12 gap-6 items-center">
+                      {/* Serial Number & Icon */}
+                      <div className="md:col-span-2 flex md:flex-col items-center gap-4">
+                        <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${project.gradient} flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500`}>
+                          <project.icon className="text-white" size={36} strokeWidth={2.5} />
+                        </div>
+                        <div className="text-center">
+                          <div className="text-4xl font-black text-gray-900">{project.serialNo}</div>
+                          <div className="text-xs text-gray-500 font-semibold mt-1">Project</div>
+                        </div>
+                      </div>
+                      
+                      {/* Project Details */}
+                      <div className="md:col-span-6">
+                        <div className="mb-3">
+                          <span className="inline-block px-3 py-1 bg-yellow-400 bg-opacity-10 text-yellow-600 rounded-full text-xs font-bold mb-3">
+                            {project.category}
+                          </span>
+                        </div>
+                        
+                        <h3 className="text-xl md:text-2xl font-black text-gray-900 mb-4 leading-tight group-hover:text-yellow-400 transition-colors">
+                          {project.title}
+                        </h3>
+                        
+                        <div className="space-y-2">
+                          <div className="flex items-center gap-3 text-gray-600">
+                            <Briefcase size={16} className="text-gray-400" />
+                            <span className="text-sm font-medium">{project.client}</span>
                           </div>
-                        ))}
+                          <div className="flex items-center gap-3 text-gray-600">
+                            <MapPin size={16} className="text-gray-400" />
+                            <span className="text-sm font-medium">{project.location}</span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/* Financial & Timeline Info */}
+                      <div className="md:col-span-4 space-y-4">
+                        <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                          <div className="flex items-center gap-3 mb-3">
+                            <div className="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
+                              <DollarSign className="text-green-600" size={20} strokeWidth={2.5} />
+                            </div>
+                            <div>
+                              <div className="text-xs text-gray-500 font-medium">Project Value</div>
+                              <div className="text-lg font-black text-gray-900">{project.cost}</div>
+                            </div>
+                          </div>
+                          
+                          <div className="flex items-center gap-3 pt-3 border-t border-gray-200">
+                            <div className="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center">
+                              <Calendar className="text-blue-600" size={20} strokeWidth={2.5} />
+                            </div>
+                            <div>
+                              <div className="text-xs text-gray-500 font-medium">Duration</div>
+                              <div className="text-base font-bold text-gray-900">{project.duration}</div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-center justify-center gap-2 px-4 py-3 bg-green-50 border border-green-200 rounded-xl">
+                          <CheckCircle className="text-green-600" size={20} strokeWidth={2.5} />
+                          <span className="text-green-700 font-bold text-sm">{project.status}</span>
+                        </div>
                       </div>
                     </div>
-                    
-                    {/* CTA Button */}
-                    <button className="group/btn w-full py-4 bg-gray-50 hover:bg-yellow-400 text-gray-900 rounded-2xl font-bold flex items-center justify-center gap-2 hover:gap-3 transition-all duration-300">
-                      <Eye size={20} strokeWidth={2.5} />
-                      View Details
-                      <ArrowRight className="group-hover/btn:translate-x-1 transition-transform" size={18} strokeWidth={2.5} />
-                    </button>
                   </div>
                   
                   {/* Bottom accent line */}
-                  <div className="h-1 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className={`h-1 bg-gradient-to-r ${project.gradient} transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left`}></div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROJECT SUMMARY */}
+      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+              Project <span className="text-yellow-400">Summary</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Comprehensive overview of our expertise across multiple sectors
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Infrastructure */}
+            <div className="fade-in-up bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover-lift">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center mb-6">
+                <Building2 className="text-white" size={32} strokeWidth={2.5} />
+              </div>
+              <h3 className="text-2xl font-black text-gray-900 mb-3">Infrastructure</h3>
+              <div className="text-4xl font-black text-gray-900 mb-2">
+                {projects.filter(p => p.category === "Infrastructure").length}
+              </div>
+              <p className="text-gray-600 mb-4">Major Projects</p>
+              <div className="text-sm text-gray-500">
+                Road construction, widening, and link road development projects
+              </div>
+            </div>
+            
+            {/* Water Management */}
+            <div className="fade-in-up bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover-lift stagger-1">
+              <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-green-500 rounded-2xl flex items-center justify-center mb-6">
+                <Layers className="text-white" size={32} strokeWidth={2.5} />
+              </div>
+              <h3 className="text-2xl font-black text-gray-900 mb-3">Water Management</h3>
+              <div className="text-4xl font-black text-gray-900 mb-2">
+                {projects.filter(p => p.category === "Water Management").length}
+              </div>
+              <p className="text-gray-600 mb-4">Major Projects</p>
+              <div className="text-sm text-gray-500">
+                Pump construction, re-sectioning, and civil works
+              </div>
+            </div>
+            
+            {/* Irrigation */}
+            <div className="fade-in-up bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover-lift stagger-2">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                <Droplet className="text-white" size={32} strokeWidth={2.5} />
+              </div>
+              <h3 className="text-2xl font-black text-gray-900 mb-3">Irrigation Infrastructure</h3>
+              <div className="text-4xl font-black text-gray-900 mb-2">
+                {projects.filter(p => p.category === "Irrigation Infrastructure").length}
+              </div>
+              <p className="text-gray-600 mb-4">Major Projects</p>
+              <div className="text-sm text-gray-500">
+                Canal lining, improvement, and irrigation system development
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -434,25 +580,26 @@ const Projects = () => {
         <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
           <div className="fade-in-up">
             <div className="inline-block px-4 py-2 bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-full mb-8">
-              <span className="text-yellow-400 text-sm font-semibold tracking-wide">LET'S COLLABORATE</span>
+              <span className="text-yellow-400 text-sm font-semibold tracking-wide">GET IN TOUCH</span>
             </div>
             
             <h2 className="text-4xl md:text-6xl font-black mb-6">
-              Have a Project in Mind?
+              Ready to Start Your Project?
             </h2>
             
             <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Let's discuss how we can bring your construction project to life with our expertise and experience
+              With a proven track record of Rs. {(totalValue / 100000000).toFixed(1)}B+ in successfully completed government projects, we're ready to deliver excellence for your next infrastructure initiative
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-             
-              <Link
-                to="/Contact"
-                className="px-10 py-5 border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 shadow-2xl"
-              >
-                Contact Us
-              </Link>
+              <button className="group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl hover:shadow-yellow-400/50">
+                Contact Us Today
+                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} />
+              </button>
+              <button className="px-10 py-5 border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 shadow-2xl flex items-center justify-center gap-2">
+                <FileText size={22} />
+                Download Portfolio
+              </button>
             </div>
           </div>
         </div>
