@@ -296,12 +296,8 @@ const Home = () => {
         
         <div className="absolute inset-0 video-overlay" />
         
-        {/* Floating geometric shapes */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="floating-element absolute top-20 left-20 w-20 h-20 border-2 border-yellow-400 opacity-20 rounded-lg"></div>
-          <div className="floating-element absolute top-40 right-40 w-16 h-16 border-2 border-yellow-400 opacity-30 rounded-full stagger-2"></div>
-          <div className="floating-element absolute bottom-32 left-1/4 w-12 h-12 border-2 border-yellow-400 opacity-25 stagger-3"></div>
-        </div>
+       
+       
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <div className="fade-in-up mb-6">
@@ -342,6 +338,77 @@ const Home = () => {
 
      
 
+     {/* FOUNDER'S LEGACY SECTION */}
+<section className="section-padding bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
+  {/* Decorative elements */}
+  <div className="absolute inset-0 opacity-10">
+    <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_50%,_#FBBF24_0%,_transparent_50%)]"></div>
+    <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_50%,_#F59E0B_0%,_transparent_50%)]"></div>
+  </div>
+
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
+      {/* Image Section */}
+      <div className="fade-in-up">
+        <div className="relative">
+          {/* Decorative frame */}
+             
+            <img
+              src="./Founder.png"
+              alt="Bashir Ahmed - Founder"
+              className="w-full aspect-square object-contain rounded-3xl overflow-hidden shadow-2xl hover-scale"
+            />
+        
+
+          {/* Decorative quote mark */}
+          <div className="absolute -top-6 -left-6 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center text-gray-900 text-6xl font-serif leading-none">
+            "
+          </div>
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div className="fade-in-up stagger-2">
+        <div className="inline-block px-4 py-2 bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-full mb-6">
+          <span className="text-yellow-400 text-sm font-semibold tracking-wide">IN LOVING MEMORY</span>
+        </div>
+
+        <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+          Founder's <span className="text-yellow-400">Legacy</span>
+        </h2>
+
+        <div className="w-20 h-1 bg-yellow-400 mb-8"></div>
+
+        <div className="space-y-6 text-gray-300 leading-relaxed text-lg">
+          <p>
+            HBAS & CO stands upon the timeless vision, dedication, and integrity of our beloved founder, <strong className="text-white">Bashir Ahmed</strong>. He was more than a mentor—he was an inspiration, a guide, and the heart behind every milestone this company has achieved.
+          </p>
+
+          <p>
+            Through his unwavering honesty, tireless hard work, and commitment to keeping his word, he laid the foundation that continues to guide us today. His values of trust, perseverance, and faith remain the pillars of HBAS & CO.
+          </p>
+
+          <p>
+            Every step we take forward is a reflection of his enduring spirit. This company's growth is not just a business journey, but also a tribute to the man whose honesty and determination made HBAS & CO what it is today.
+          </p>
+
+          <div className="bg-white bg-opacity-5 border border-yellow-400 border-opacity-20 rounded-2xl p-6 backdrop-blur-sm">
+            <p className="text-yellow-400 italic font-medium">
+              "Though he is no longer with us, his vision lives on in our work, our values, and our commitment to excellence. He will forever remain our greatest inspiration."
+            </p>
+          </div>
+        </div>
+
+        {/* Memorial badge */}
+        <div className="mt-8 inline-flex items-center gap-3 px-6 py-4 bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-full">
+          <Star className="text-yellow-400" size={24} fill="currentColor" />
+          <span className="text-white font-bold">Forever in Our Hearts</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
       {/* LEADERSHIP SECTION */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-6">
@@ -359,7 +426,7 @@ const Home = () => {
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
             {[
-              { name: "Furqan Ahmed Soomro", position: "Principal Partner  and Managing Director", image: "./Furqan_Ahmed.png" },
+              { name: "Furqan Ali Soomro", position: "Principal Partner  and Managing Director", image: "./Furqan_Ahmed.png" },
               { name: "Adnan Ali Soomro", position: "Associate Partner", image: "./AdnanAli.png" },
               // { name: "Muhammad Rashid", position: "General Manager", image: "./Rashid.png" }
             ].map((leader, i) => (

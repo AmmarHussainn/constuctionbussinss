@@ -258,12 +258,7 @@ const Services = () => {
       >
         <div className="absolute inset-0 hero-overlay"></div>
         
-        {/* Floating elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="floating absolute top-20 left-20 w-20 h-20 border-2 border-yellow-400 opacity-20 rounded-lg"></div>
-          <div className="floating absolute top-40 right-40 w-16 h-16 border-2 border-yellow-400 opacity-30 rounded-full" style={{animationDelay: '2s'}}></div>
-          <div className="floating absolute bottom-32 left-1/4 w-12 h-12 border-2 border-yellow-400 opacity-25" style={{animationDelay: '4s'}}></div>
-        </div>
+       
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           <div className="fade-in-up mb-6">
@@ -282,13 +277,7 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white opacity-60 animate-bounce">
-          <div className="flex flex-col items-center gap-2">
-            <span className="text-xs uppercase tracking-widest">Explore</span>
-            <ChevronRight className="rotate-90" size={20} />
-          </div>
-        </div>
+      
       </section>
 
       {/* STATS SECTION */}

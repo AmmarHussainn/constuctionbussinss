@@ -16,6 +16,7 @@ import {
   Clock,
   Shield
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -510,15 +511,78 @@ const Projects = () => {
     fundingSource: "ADP SCHEMES",
     contractName: "Construction of Gravity Weir Across Kandh Dhoro Nai in Lower Kohistan Contract No. TC/G-55/129Jamshoro Dated 16 Apr 2012)",
     briefDescription: "Earthen Embankment, Approach Bunds, Stone Pitching,Stone Apron, Stone Filling, RCC,PCC,Excavation (Earthwork) in Hard Rocks & Soft Soil,Earthwork Filling",
-    contractAmount: "154,463,244 PKR",
+    contractAmount: "107,615,427 PKR",
     employer: "Executive Engineer Small Dams Division Kohistan-II Jamshoro",
     address: "Executive Engineer Small Dams Organization Hyderabad",
     role: "Prime Contractor"
   },
+  {
+    startingYear: "2011",
+    endingYear: "2013",
+    fundingSource: "ADP SCHEMES",
+    contractName: "Construction of Gravity Weir Across Mol Nai in Lower Kohistan Contract No. TC/G-55/383Jamshoro Dated 23 Aug 2011)",
+    briefDescription: "Earthen Embankment, Approach Bunds, Stone Pitching,Stone Apron, Stone Filling, RCC,PCC,Excavation (Earthwork) in Hard Rocks & Soft Soil,Earthwork Filling",
+    contractAmount: "154,518,812 PKR",
+    employer: "Executive Engineer Small Dams Division Kohistan-II Jamshoro",
+    address: "Executive Engineer Small Dams Organization Hyderabad",
+    role: "Prime Contractor"
+  },
+  {
+    startingYear: "2011",
+    endingYear: "2013",
+    fundingSource: "ADP SCHEMES",
+    contractName: "Recouping of Existing Stone Apron of H.P Bund Mile 3/6+260 to 4/0, Mile 5/7 ot 6/2, 6/6 to 6/7 and Providing new Stone Apron along H.P Bund 3/4 to 3/6+260, 4/0 to 5/5+330 and Recouping Stone Spur(Nose Point) along HP. Bund mile 13/2 (Budhka) (Contract No. TC/G-55/732 of 201 Hyderabad Dated 14 Apr 2011)",
+    briefDescription: "Earthen Embankment, Approach Bunds,Stone Pitching,Stone Apron, Stone Filing, Excavation (Earthwork) ni Soft Soil, Earthwork Filing",
+    contractAmount: "52,500,334 PKR",
+    employer: "Executive Engineer Upper Pinyari Division, Hyderabad",
+    address: "Executive Engineer Irrigation Ofice Upper Pinyari Hyderabad",
+    role: "Prime Contractor"
+  },
+   {
+    startingYear: "2009",
+    endingYear: "2011",
+    fundingSource: "ADP SCHEMES",
+    contractName: "Raising and Strengthening of Earth Work and Raising Stone Pitching along H.P Bund Mile 3/0 To 6/4 (Contract No. TC/G-55/393 of 2011 Hyderabad Dated 01 Mar 2011)",
+    briefDescription: "Earthen Embankment, Approach Bunds, Stone Pitching, Stone Apron, Stone Filling, Excavation (Earthwork) in Soft Soil, Earthwork Filling",
+    contractAmount: "52,500,334 PKR",
+    employer: "Executive Engineer Upper Pinyari Division, Hyderabad",
+    address: "Executive Engineer Irrigation Office Upper Pinyari Hyderabad",
+    role: "Prime Contractor"
+  },
+  {
+    startingYear: "2009",
+    endingYear: "2011",
+    fundingSource: "ADP SCHEMES",
+    contractName: "Renovation and Rehabilitation of Existing Building of Director General Health Office at Hyderabad",
+    briefDescription: "Construction of New Building Civil Works, Plumbing Work and Electrification Works",
+    contractAmount: "16,700,267 PKR",
+    employer: "Executive Engineer Provisional Buildings Division Hyderabad",
+    role: "Prime Contractor"
+  },
+  {
+    startingYear: "2009",
+    endingYear: "2011",
+    fundingSource: "ADP SCHEMES",
+    contractName: "Consolidation/Improvement and Additional Facilities at Sindh Sports Board Complex Hyderabad (Construction of Mess, Conference Hall & 12 Nos Suits)",
+    briefDescription: "Construction of Building Civil Works, Plumbing Work and Electrification Works",
+    contractAmount: "42,697,602 PKR",
+    employer: "Executive Engineer Provisional Buildings Division Hyderabad",
+    role: "Prime Contractor"
+  },
+  {
+    startingYear: "2009",
+    endingYear: "2011",
+    fundingSource: "ADP SCHEMES",
+    contractName: "Establishment of 30 Bedded Hospital Nooriabad District Jamshoro",
+    briefDescription: "Construction of New Building Civil Works, Plumbing Work and Electrification Works",
+    contractAmount: "16,608,605 PKR",
+    employer: "Executive Engineer Provisional Buildings Division Hyderabad",
+    role: "Prime Contractor"
+  }
 ]
 
   const fundingSources = ["All", "World Bank financed", "ADP SCHEMES", "PSDP SCHEMES", "Private sector"];
-  const years = ["All", "2022", "2021", "2020", "2019", "2018"];
+  const years = ["All", "2022", "2021", "2020", "2019", "2018" , "2017", "2015", "2014", "2012", "2011", "2009"];
 
   useEffect(() => {
     let filtered = projects;
@@ -704,7 +768,7 @@ const Projects = () => {
       </section>
 
       {/* FILTER SECTION */}
-      <section className="py-16 bg-white sticky top-0 z-40 border-b border-gray-100 shadow-sm backdrop-blur-lg bg-white bg-opacity-95">
+      <section className="py-16  sticky top-0 z-40 border-b border-gray-100 shadow-sm backdrop-blur-lg bg-white bg-opacity-95">
         <div className="max-w-7xl mx-auto px-6">
           <div className="space-y-6">
             {/* Funding Source Filter */}
@@ -883,14 +947,13 @@ const Projects = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl">
+              <Link
+              to="/contact"
+              className="group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl">
                 Contact Us Today
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} />
-              </button>
-              <button className="px-10 py-5 border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 shadow-2xl flex items-center justify-center gap-2">
-                <FileText size={22} />
-                Download Portfolio
-              </button>
+              </Link>
+             
             </div>
           </div>
         </div>
