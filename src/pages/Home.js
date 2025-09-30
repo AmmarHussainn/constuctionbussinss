@@ -354,7 +354,7 @@ const Home = () => {
           {/* Decorative frame */}
              
             <img
-              src="./Founder.png"
+              src="./bashirahmed.jpeg"
               alt="Bashir Ahmed - Founder"
               className="w-full aspect-square object-contain rounded-3xl overflow-hidden  hover-scale"
             />
