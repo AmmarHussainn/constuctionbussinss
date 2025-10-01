@@ -110,11 +110,13 @@ const Footer = () => {
             </p>
             
             {/* PEC Badge */}
-            <div className="inline-flex items-center gap-3 px-4 py-3 bg-white bg-opacity-5 backdrop-blur-sm border border-yellow-400 border-opacity-30 rounded-2xl badge-shine">
-              <Shield className="text-yellow-400" size={20} strokeWidth={2.5} />
+            <div className="flex items-center gap-4 bg-white bg-opacity-5 backdrop-blur-sm border border-gray-700 rounded-2xl p-4 hover:border-yellow-400 transition-all duration-300 badge-shine">
+              <div className="w-12 h-12 bg-yellow-400 bg-opacity-10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Shield className="text-yellow-400" size={24} strokeWidth={2.5} />
+              </div>
               <div>
-                <p className="text-xs text-gray-400 uppercase tracking-wide">PEC Registered</p>
-                <p className="text-sm font-bold text-white">No Limit Company</p>
+                <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">PEC Registered</p>
+                <p className="text-white font-bold">No Limit Company</p>
               </div>
             </div>
           </div>
