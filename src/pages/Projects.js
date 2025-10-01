@@ -37,7 +37,9 @@ const Projects = () => {
         briefDescription: "Construction of 15 SCHOOLS GROUND+2,GROUND +3 Civil Works,Plumbing Work and Electrification Works",
         contractAmount: "1,660,191,970 PKR",
         employer: "Chief Program Manager, Reform Support Unit, PMIU/Selection School Education & Literacy Department Govt. of Sindh",
-        role: "Prime Contractor"
+        role: "Prime Contractor",
+        imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg"
+
       },
       {
         startingYear: "2022",
@@ -47,7 +49,8 @@ const Projects = () => {
         briefDescription: "Construction of 15 SCHOOLS GROUND+2, GROUND +3 Civil Works, Plumbing Work and Electrification Works",
         contractAmount: "1,663,286,414 PKR",
         employer: "Chief Program Manager, Reform Support Unit, PMIU/Selection School Education & Literacy Department Govt. of Sindh",
-        role: "Prime Contractor"
+        role: "Prime Contractor",
+        imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg"
       },
       {
         startingYear: "2022",
@@ -56,9 +59,11 @@ const Projects = () => {
         contractName: "SBIP/G3A:CONSTRUCION OF RIGHT TJ SPUR OF GUUDU BARRAGE",
         contractAmount: "1,062,582,381 PKR",
         employer: "(PMO) Sindh barrages improvement project (SBIP)Irrigation Department Sindh",
-        role: "Prime Contractor"
+        role: "Prime Contractor",
+        imageUrl: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2024",
         fundingSource: "World Bank financed",
@@ -72,6 +77,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "World Bank financed",
@@ -86,6 +92,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "World Bank financed",
@@ -99,6 +106,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "ADP SCHEMES",
@@ -112,6 +120,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "World Bank financed",
@@ -125,6 +134,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "World Bank financed",
@@ -138,6 +148,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "World Bank financed",
@@ -151,6 +162,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2024",
         fundingSource: "ADP SCHEMES",
@@ -164,6 +176,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2024",
         fundingSource: "ADP SCHEMES",
@@ -176,6 +189,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2024",
         fundingSource: "ADP SCHEMES",
@@ -188,6 +202,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2024",
         fundingSource: "ADP SCHEMES",
@@ -200,6 +215,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "Private sector",
@@ -210,6 +226,7 @@ const Projects = () => {
         role: "Sub-contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2021",
         endingYear: "2022",
         fundingSource: "World Bank financed",
@@ -223,6 +240,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2021",
         endingYear: "2022",
         fundingSource: "World Bank financed",
@@ -236,6 +254,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2021",
         endingYear: "2022",
         fundingSource: "World Bank financed",
@@ -249,6 +268,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2021",
         endingYear: "2022",
         fundingSource: "World Bank financed",
@@ -262,6 +282,7 @@ const Projects = () => {
         role: "JV"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2021",
         endingYear: "2022",
         fundingSource: "World Bank financed",
@@ -275,6 +296,7 @@ const Projects = () => {
         role: "JV"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2020",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -288,6 +310,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2020",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -301,6 +324,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2020",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -313,6 +337,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2019",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -326,6 +351,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2019",
         endingYear: "2020",
         fundingSource: "World Bank Financed",
@@ -339,6 +365,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2018",
         endingYear: "2019",
         fundingSource: "ADP SCHEMES",
@@ -350,6 +377,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2017",
         endingYear: "2017",
         fundingSource: "ADP SCHEMES",
@@ -361,6 +389,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2017",
         endingYear: "2018",
         fundingSource: "PSDP SCHEMES",
@@ -372,6 +401,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2017",
         endingYear: "2018",
         fundingSource: "ADP SCHEMES",
@@ -383,6 +413,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2015",
         endingYear: "2017",
         fundingSource: "ADP SCHEMES",
@@ -394,6 +425,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2015",
         endingYear: "2015",
         fundingSource: "ADP SCHEMES",
@@ -406,6 +438,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2015",
         endingYear: "2015",
         fundingSource: "ADP SCHEMES",
@@ -418,6 +451,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2015",
         endingYear: "2015",
         fundingSource: "ADP SCHEMES",
@@ -429,6 +463,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2011",
         endingYear: "2014",
         fundingSource: "PSDP SCHEMES",
@@ -440,6 +475,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2011",
         endingYear: "2016",
         fundingSource: "PSDP SCHEMES",
@@ -451,6 +487,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2014",
         endingYear: "2015",
         fundingSource: "ADP SCHEMES",
@@ -462,6 +499,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2014",
         endingYear: "2014",
         fundingSource: "ADP SCHEMES",
@@ -474,6 +512,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2014",
         endingYear: "2014",
         fundingSource: "ADP SCHEMES",
@@ -486,6 +525,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2014",
         endingYear: "2014",
         fundingSource: "ADP SCHEMES",
@@ -498,6 +538,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2014",
         endingYear: "2014",
         fundingSource: "ADP SCHEMES",
@@ -510,6 +551,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2012",
         endingYear: "2014",
         fundingSource: "ADP SCHEMES",
@@ -521,6 +563,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2011",
         endingYear: "2013",
         fundingSource: "ADP SCHEMES",
@@ -532,6 +575,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2011",
         endingYear: "2013",
         fundingSource: "ADP SCHEMES",
@@ -543,6 +587,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2009",
         endingYear: "2011",
         fundingSource: "ADP SCHEMES",
@@ -554,6 +599,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2009",
         endingYear: "2011",
         fundingSource: "ADP SCHEMES",
@@ -564,6 +610,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2009",
         endingYear: "2011",
         fundingSource: "ADP SCHEMES",
@@ -574,6 +621,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
+       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
         startingYear: "2009",
         endingYear: "2011",
         fundingSource: "ADP SCHEMES",
@@ -771,8 +819,8 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* FILTER SECTION */}
-      <section className="py-16  md:sticky top-10 z-40 border-b border-gray-100 shadow-sm backdrop-blur-lg bg-white bg-opacity-95">
+      {/* FILTER SECTION md:sticky top-10*/}
+      <section className="py-16   z-40 border-b border-gray-100 shadow-sm backdrop-blur-lg bg-white bg-opacity-95">
         <div className="max-w-7xl mx-auto px-6">
           <div className="space-y-6">
             {/* Funding Source Filter */}
@@ -790,8 +838,8 @@ const Projects = () => {
                     key={i}
                     onClick={() => setActiveFilter(source)}
                     className={`filter-btn px-6 py-3 rounded-full font-semibold text-sm border-2 ${activeFilter === source
-                        ? 'active'
-                        : 'border-gray-200 text-gray-700 hover:border-yellow-400 hover:text-yellow-400 bg-white'
+                      ? 'active'
+                      : 'border-gray-200 text-gray-700 hover:border-yellow-400 hover:text-yellow-400 bg-white'
                       }`}
                   >
                     {source}
@@ -813,8 +861,8 @@ const Projects = () => {
                     key={i}
                     onClick={() => setSelectedYear(year)}
                     className={`px-4 py-2 rounded-full font-semibold text-sm ${selectedYear === year
-                        ? 'bg-gray-900 text-white'
-                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      ? 'bg-gray-900 text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                   >
                     {year}
@@ -827,105 +875,115 @@ const Projects = () => {
       </section>
 
       {/* PROJECTS LIST */}
-      <section className="section-padding bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+       <section className="py-16 px-6">
+        <div className="max-w-7xl mx-auto">
           <div className="space-y-8">
             {filteredProjects.map((project, i) => (
               <div
                 key={i}
-                className="fade-in-up"
-                style={{ animationDelay: `${i * 0.05}s` }}
+                className="opacity-0 animate-fade-in"
+                style={{ animationDelay: `${i * 0.1}s`, animationFillMode: 'forwards' }}
               >
-                <div className="relative bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover-lift">
-                  <div className="p-8 md:p-10">
-                    <div className="grid md:grid-cols-12 gap-8">
-                      {/* Left Section - Timeline & Role */}
-                      <div className="md:col-span-3 relative pl-6">
-                        <div className="timeline-marker">
-                          <div className="timeline-line"></div>
-
-                          {/* Year Range */}
-                          <div className="mb-6">
-                            <div className="flex items-center gap-2 mb-2">
-                              <Clock className="text-yellow-400" size={18} strokeWidth={2} />
-                              <span className="text-sm font-bold text-gray-500 uppercase tracking-wide">Timeline</span>
-                            </div>
-                            <div className="text-2xl font-black text-gray-900">
-                              {project.startingYear} - {project.endingYear}
-                            </div>
-                          </div>
-
-                          {/* Role Badge */}
-                          <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-full mb-4">
-                            <Shield className="text-yellow-400" size={16} strokeWidth={2.5} />
-                            <span className="text-yellow-600 text-xs md:text-sm font-bold">{project.role}</span>
-                          </div>
-
-                          {/* Funding Badge */}
-                          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 border border-gray-200 rounded-full">
-                            <Award className="text-gray-600" size={16} strokeWidth={2} />
-                            <span className="text-gray-700 text-xs font-semibold">{project.fundingSource}</span>
-                          </div>
+                <div className="relative bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="grid lg:grid-cols-5 gap-0">
+                    {/* Image Section */}
+                    <div className="md:col-span-3 lg:col-span-2 relative h-64 md:h-auto overflow-hidden group">
+                      <img 
+                        src={project.imageUrl} 
+                        alt={project.contractName}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                      
+                      {/* Timeline Badge on Image */}
+                      <div className="absolute top-6 left-6 bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-3 shadow-lg">
+                        <div className="flex items-center gap-2 mb-1">
+                          <Clock className="text-yellow-500" size={16} strokeWidth={2.5} />
+                          <span className="text-xs font-bold text-gray-600 uppercase tracking-wide">Timeline</span>
+                        </div>
+                        <div className="text-xl font-black text-gray-900">
+                          {project.startingYear} - {project.endingYear}
                         </div>
                       </div>
 
-                      {/* Right Section - Project Details */}
-                      <div className="md:col-span-9">
-                        {/* Project Title */}
-                        <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-4 leading-tight hover:text-yellow-400 transition-colors">
-                          {project.contractName}
-                        </h3>
-                     
+                      {/* Status Badge on Image */}
+                      <div className="absolute bottom-6 left-6 right-6 flex items-center w-fit gap-3">
+                        <div className="flex-1 flex items-center gap-2 bg-white/95 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg w-fit">
+                          {project.endingYear === "2026" ? (
+                            <>
+                              <Cog className="text-green-600 animate-spin" size={18} strokeWidth={2.5} style={{ animationDuration: '3s' }} />
+                              <span className="text-green-700 font-bold text-sm">Ongoing</span>
+                            </>
+                          ) : (
+                            <>
+                              <CheckCircle className="text-green-600" size={18} strokeWidth={2.5} />
+                              <span className="text-green-700 font-bold text-sm">Delivered</span>
+                            </>
+                          )}
+                        </div>
+                      </div>
+                    </div>
 
-                        {/* Brief Description */}
-                        {project.briefDescription && (
-                          <p className="text-gray-600 leading-relaxed mb-6 text-base">
-                            {project.briefDescription}
-                          </p>
-                        )}
-                        {/* Address */}
+                    {/* Content Section */}
+                    <div className="md:col-span-3 p-4 md:p-10">
+                      {/* Role & Funding Badges */}
+                      <div className="flex flex-wrap items-center gap-3 mb-6">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-full">
+                          <Shield className="text-yellow-500" size={16} strokeWidth={2.5} />
+                          <span className="text-yellow-600 text-xs md:text-sm font-bold">{project.role}</span>
+                        </div>
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 border border-gray-200 rounded-full">
+                          <Award className="text-gray-600" size={16} strokeWidth={2} />
+                          <span className="text-gray-700 text-xs font-semibold">{project.fundingSource}</span>
+                        </div>
+                      </div>
 
-                         {project?.address && (
-                          <p className="text-gray-600 leading-relaxed mb-6 text-sm flex items-center gap-1">
-                            <MapPin size={16} />
-                            {project?.address}
-                          </p>
-                        )}
+                      {/* Project Title */}
+                      <h3 className="text-xl md:text-3xl font-black text-gray-900 mb-4 leading-tight hover:text-yellow-500 transition-colors cursor-pointer">
+                        {project.contractName}
+                      </h3>
 
-                        {/* Info Grid */}
-                        <div className="grid sm:grid-cols-2 gap-6 mb-6">
-                          {/* Employer */}
-                          <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-                            <div className="flex items-start gap-3">
-                              <div className="flex-shrink-0 w-10 h-10 bg-gray-900 rounded-xl flex items-center justify-center">
-                                <Briefcase className="text-white" size={20} strokeWidth={2} />
-                              </div>
-                              <div>
-                                <div className="text-xs text-gray-500 font-semibold mb-1 uppercase tracking-wide">Employer</div>
-                                <div className="text-sm font-bold text-gray-900 leading-snug">{project.employer}</div>
-                              </div>
+                      {/* Brief Description */}
+                      {project.briefDescription && (
+                        <p className="text-gray-600 leading-relaxed mb-6 text-base">
+                          {project.briefDescription}
+                        </p>
+                      )}
+
+                      {/* Address */}
+                      {project.address && (
+                        <div className="flex items-center gap-2 mb-6 text-gray-500">
+                          <MapPin size={16} className="flex-shrink-0" />
+                          <span className="text-sm">{project.address}</span>
+                        </div>
+                      )}
+
+                      {/* Info Grid */}
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        {/* Employer */}
+                        <div className="bg-gray-50 rounded-2xl p-5 border border-gray-100">
+                          <div className="flex items-start gap-3">
+                            <div className="flex-shrink-0 w-10 h-10 bg-gray-900 rounded-xl flex items-center justify-center">
+                              <Briefcase className="text-white" size={18} strokeWidth={2} />
                             </div>
-                          </div>
-
-                          {/* Contract Value */}
-                          <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-6 border border-yellow-200">
-                            <div className="flex items-start gap-3">
-                              <div className="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded-xl flex items-center justify-center">
-                                <DollarSign className="text-gray-900" size={20} strokeWidth={2.5} />
-                              </div>
-                              <div>
-                                <div className="text-xs text-yellow-700 font-semibold mb-1 uppercase tracking-wide">Contract Value</div>
-                                <div className="text-lg font-black text-gray-900">{project.contractAmount}</div>
-                              </div>
+                            <div className="min-w-0">
+                              <div className="text-xs text-gray-500 font-semibold mb-1 uppercase tracking-wide">Employer</div>
+                              <div className="text-sm font-bold text-gray-900 leading-snug">{project.employer}</div>
                             </div>
                           </div>
                         </div>
 
-                        {/* Status Indicator */}
-                        <div className="flex items-center gap-2 pt-4 border-t border-gray-100">
-                         {project.endingYear == "2026" ? <Cog className="text-green-700" size={20} strokeWidth={2.5} /> : <CheckCircle className="text-green-700" size={20} strokeWidth={2.5} />}
-                         
-                          <span className="text-green-700 font-bold text-sm">{project.endingYear == "2026" ? "Ongoing" : "Successfully Delivered"}</span>
+                        {/* Contract Value */}
+                        <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-5 border border-yellow-200">
+                          <div className="flex items-start gap-3">
+                            <div className="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded-xl flex items-center justify-center">
+                              <DollarSign className="text-gray-900" size={18} strokeWidth={2.5} />
+                            </div>
+                            <div className="min-w-0">
+                              <div className="text-xs text-yellow-700 font-semibold mb-1 uppercase tracking-wide">Contract Value</div>
+                              <div className="text-lg font-black text-gray-900">{project.contractAmount}</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -939,6 +997,105 @@ const Projects = () => {
           </div>
         </div>
       </section>
+      {/* <section className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="space-y-8">
+            {filteredProjects.map((project, i) => (
+              <div
+                key={i}
+                className="fade-in-up"
+                style={{ animationDelay: `${i * 0.05}s` }}
+              >
+                <div className="relative bg-white border border-gray-200 rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover-lift">
+                  <div className="p-8 md:p-10">
+                    <div className="grid md:grid-cols-12 gap-8">
+                      <div className="md:col-span-3 relative pl-6">
+                        <div className="timeline-marker">
+                          <div className="timeline-line"></div>
+
+                          <div className="mb-6">
+                            <div className="flex items-center gap-2 mb-2">
+                              <Clock className="text-yellow-400" size={18} strokeWidth={2} />
+                              <span className="text-sm font-bold text-gray-500 uppercase tracking-wide">Timeline</span>
+                            </div>
+                            <div className="text-2xl font-black text-gray-900">
+                              {project.startingYear} - {project.endingYear}
+                            </div>
+                          </div>
+
+                          <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-full mb-4">
+                            <Shield className="text-yellow-400" size={16} strokeWidth={2.5} />
+                            <span className="text-yellow-600 text-xs md:text-sm font-bold">{project.role}</span>
+                          </div>
+
+                          <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-50 border border-gray-200 rounded-full">
+                            <Award className="text-gray-600" size={16} strokeWidth={2} />
+                            <span className="text-gray-700 text-xs font-semibold">{project.fundingSource}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="md:col-span-9">
+                        <h3 className="text-2xl md:text-3xl font-black text-gray-900 mb-4 leading-tight hover:text-yellow-400 transition-colors">
+                          {project.contractName}
+                        </h3>
+
+
+                        {project.briefDescription && (
+                          <p className="text-gray-600 leading-relaxed mb-6 text-base">
+                            {project.briefDescription}
+                          </p>
+                        )}
+
+                        {project?.address && (
+                          <p className="text-gray-600 leading-relaxed mb-6 text-sm flex items-center gap-1">
+                            <MapPin size={16} />
+                            {project?.address}
+                          </p>
+                        )}
+
+                        <div className="grid sm:grid-cols-2 gap-6 mb-6">
+                          <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                            <div className="flex items-start gap-3">
+                              <div className="flex-shrink-0 w-10 h-10 bg-gray-900 rounded-xl flex items-center justify-center">
+                                <Briefcase className="text-white" size={20} strokeWidth={2} />
+                              </div>
+                              <div>
+                                <div className="text-xs text-gray-500 font-semibold mb-1 uppercase tracking-wide">Employer</div>
+                                <div className="text-sm font-bold text-gray-900 leading-snug">{project.employer}</div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-6 border border-yellow-200">
+                            <div className="flex items-start gap-3">
+                              <div className="flex-shrink-0 w-10 h-10 bg-yellow-400 rounded-xl flex items-center justify-center">
+                                <DollarSign className="text-gray-900" size={20} strokeWidth={2.5} />
+                              </div>
+                              <div>
+                                <div className="text-xs text-yellow-700 font-semibold mb-1 uppercase tracking-wide">Contract Value</div>
+                                <div className="text-lg font-black text-gray-900">{project.contractAmount}</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-2 pt-4 border-t border-gray-100">
+                          {project.endingYear == "2026" ? <Cog className="text-green-700" size={20} strokeWidth={2.5} /> : <CheckCircle className="text-green-700" size={20} strokeWidth={2.5} />}
+
+                          <span className="text-green-700 font-bold text-sm">{project.endingYear == "2026" ? "Ongoing" : "Successfully Delivered"}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="h-1 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400"></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section> */}
 
       {/* CTA SECTION */}
       <section className="section-padding bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">

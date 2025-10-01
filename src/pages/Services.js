@@ -392,12 +392,12 @@ const Services = () => {
                 <div className="text-4xl font-black mb-2">ISO</div>
                 <div className="text-sm text-gray-300">Certified Quality</div>
               </div>
-              <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl p-8 text-white hover-lift mt-8">
+              <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl p-8 text-white hover-lift">
                 <Users className="mb-4" size={32} />
                 <div className="text-4xl font-black mb-2">500+</div>
                 <div className="text-sm">Team Members</div>
               </div>
-              <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl p-8 text-white hover-lift -mt-8">
+              <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl p-8 text-white hover-lift ">
                 <Target className="mb-4" size={32} />
                 <div className="text-4xl font-black mb-2">100%</div>
                 <div className="text-sm">Client Focus</div>
