@@ -783,22 +783,22 @@ const Home = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                img: bgImage2,
-                title: "Major Irrigation Canal System",
-                desc: "Comprehensive irrigation infrastructure spanning agricultural regions",
-                category: "Irrigation"
+                img: './schoolsinDistrictKashmore.jpg',
+                title: "Construction of 15 schools in District Kashmore",
+                desc: "Construction of 15 SCHOOLS GROUND+2, GROUND +3 Civil Works, Plumbing Work and Electrification Works",
+                
               },
               {
-                img: bgImage1,
-                title: "Canal Lining Project",
-                desc: "75km canal lining improving irrigation efficiency significantly",
-                category: "Water Management"
+                img: "./8project.jpg",
+                title: "Rehabilitation of Manchar Containing Bund",
+                desc: "Earthen Embankment,Approach Bunds, Stone Pitching, Stone Apron, Stone Filling",
+                
               },
               {
-                img: bgImage4,
-                title: "Bridge Construction",
-                desc: "200m reinforced concrete bridge connecting communities",
-                category: "Infrastructure"
+                img: "./11project.jpg",
+                title: "Construction of Shalmani Dam",
+                desc: "Earthen Embankment, Approach Bunds, Stone Pitching,Stone Apron, Stone Filling,RCC,PCC,Excavation (Earthwork) in Hard Rocks & Soft Soil,Earthwork Filling",
+                
               },
             ].map((project, i) => (
               <div key={i} className="fade-in-up group" style={{ animationDelay: `${i * 0.15}s` }}>
@@ -811,11 +811,7 @@ const Home = () => {
                     />
                     <div className="absolute inset-0 project-card-overlay"></div>
 
-                    <div className="absolute top-6 left-6">
-                      <span className="px-4 py-2 bg-yellow-400 text-gray-900 text-xs font-bold rounded-full">
-                        {project.category}
-                      </span>
-                    </div>
+                   
 
                     <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                       <h4 className="text-2xl font-bold mb-3 group-hover:text-yellow-400 transition-colors">
