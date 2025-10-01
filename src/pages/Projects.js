@@ -310,7 +310,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "./9project.jpg",
+       imageUrl: "./22project.jpg",
         startingYear: "2020",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -324,7 +324,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "./9project.jpg",
+       imageUrl: "./23project.jpg",
         startingYear: "2020",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -337,7 +337,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "./9project.jpg",
+       imageUrl: "./24project.jpg",
         startingYear: "2019",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -351,7 +351,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "./9project.jpg",
+       imageUrl: "./25project.jpg",
         startingYear: "2019",
         endingYear: "2020",
         fundingSource: "World Bank Financed",
@@ -365,7 +365,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "./9project.jpg",
+       imageUrl: "./26project.jpg",
         startingYear: "2018",
         endingYear: "2019",
         fundingSource: "ADP SCHEMES",
@@ -377,7 +377,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "./9project.jpg",
+       imageUrl: "./27project.jpg",
         startingYear: "2017",
         endingYear: "2017",
         fundingSource: "ADP SCHEMES",
@@ -389,7 +389,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "./9project.jpg",
+       imageUrl: "./28project.jpg",
         startingYear: "2017",
         endingYear: "2018",
         fundingSource: "PSDP SCHEMES",
@@ -401,7 +401,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "./9project.jpg",
+       imageUrl: "./29project.jpg",
         startingYear: "2017",
         endingYear: "2018",
         fundingSource: "ADP SCHEMES",
@@ -413,7 +413,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "./9project.jpg",
+       imageUrl: "./30project.jpg",
         startingYear: "2015",
         endingYear: "2017",
         fundingSource: "ADP SCHEMES",
