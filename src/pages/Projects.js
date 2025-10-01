@@ -668,13 +668,10 @@ const Projects = () => {
 
     return () => observer.disconnect();
   }, [filteredProjects]);
-
-  const calculateTotalValue = () => {
-    return filteredProjects.reduce((sum, p) => {
-      const value = parseFloat(p.contractAmount.replace(/[^0-9.]/g, ''));
-      return sum + value;
-    }, 0);
-  };
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    window.scrollTo(0, 0);
+  }, []);
 
   const stats = [
     { value: projects.length.toString(), label: "Total Projects", icon: Award },
