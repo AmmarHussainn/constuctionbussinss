@@ -31,13 +31,6 @@ const Footer = () => {
     'Government Projects'
   ];
 
-  const socialLinks = [
-    { icon: Facebook, label: 'Facebook', href: '#' },
-    { icon: Twitter, label: 'Twitter', href: '#' },
-    { icon: Linkedin, label: 'LinkedIn', href: '#' },
-    { icon: Instagram, label: 'Instagram', href: '#' }
-  ];
-
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
       <style>{`
@@ -70,15 +63,6 @@ const Footer = () => {
         .footer-link:hover {
           color: #FBBF24;
           transform: translateX(4px);
-        }
-        
-        .social-icon {
-          transition: all 0.3s ease;
-        }
-        
-        .social-icon:hover {
-          transform: translateY(-4px) scale(1.1);
-          background: linear-gradient(135deg, #FBBF24, #F59E0B);
         }
         
         .badge-shine {
@@ -136,6 +120,55 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
+          <div className="grid grid-cols-1  gap-6">
+            
+            {/* FBR Registration */}
+            <div className="flex items-center gap-4 bg-white bg-opacity-5 backdrop-blur-sm border border-gray-700 rounded-2xl p-4 hover:border-yellow-400 transition-all duration-300 badge-shine">
+              <div className="w-12 h-12 bg-yellow-400 bg-opacity-10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Award className="text-yellow-400" size={24} strokeWidth={2.5} />
+              </div>
+              <div>
+                <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">Registered with FBR</p>
+                <p className="text-white font-bold">NTN: E217522</p>
+              </div>
+            </div>
+
+            {/* SRB Registration */}
+            <div className="flex items-center gap-4 bg-white bg-opacity-5 backdrop-blur-sm border border-gray-700 rounded-2xl p-4 hover:border-yellow-400 transition-all duration-300 badge-shine">
+              <div className="w-12 h-12 bg-yellow-400 bg-opacity-10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Award className="text-yellow-400" size={24} strokeWidth={2.5} />
+              </div>
+              <div>
+                <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">Registered with SRB</p>
+                <p className="text-white font-bold">SE217522-1</p>
+              </div>
+            </div>
+
+            {/* BRB Registration */}
+            <div className="flex items-center gap-4 bg-white bg-opacity-5 backdrop-blur-sm border border-gray-700 rounded-2xl p-4 hover:border-yellow-400 transition-all duration-300 badge-shine">
+              <div className="w-12 h-12 bg-yellow-400 bg-opacity-10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Award className="text-yellow-400" size={24} strokeWidth={2.5} />
+              </div>
+              <div>
+                <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">Registered with BRB</p>
+                <p className="text-white font-bold">SE217522-1</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Services */}
+          {/* <div>
+            <h4 className="text-lg font-black text-white mb-6 uppercase tracking-wide">Our Services</h4>
+            <ul className="space-y-3">
+              {services.map((service, index) => (
+                <li key={index} className="flex items-start gap-2 text-gray-300 group cursor-pointer hover:text-yellow-400 transition-colors">
+                  <div className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-2 flex-shrink-0"></div>
+                  <span className="text-sm">{service}</span>
+                </li>
+              ))}
+            </ul>
+          </div> */}
+
           <div>
             <h4 className="text-lg font-black text-white mb-6 uppercase tracking-wide">Quick Links</h4>
             <ul className="space-y-3">
@@ -148,19 +181,6 @@ const Footer = () => {
                     <ChevronRight className="text-yellow-400 opacity-0 group-hover:opacity-100 transition-opacity" size={16} strokeWidth={2.5} />
                     <span>{link.name}</span>
                   </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h4 className="text-lg font-black text-white mb-6 uppercase tracking-wide">Our Services</h4>
-            <ul className="space-y-3">
-              {services.map((service, index) => (
-                <li key={index} className="flex items-start gap-2 text-gray-300 group cursor-pointer hover:text-yellow-400 transition-colors">
-                  <div className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-2 flex-shrink-0"></div>
-                  <span className="text-sm">{service}</span>
                 </li>
               ))}
             </ul>
@@ -214,12 +234,9 @@ const Footer = () => {
           </div>
         </div>
 
-       
-       
+        {/* Registration Details Bar - MOVED OUTSIDE THE GRID */}
        
       </div>
-
-     
     </footer>
   );
 };
