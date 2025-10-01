@@ -38,7 +38,7 @@ const Projects = () => {
         contractAmount: "1,660,191,970 PKR",
         employer: "Chief Program Manager, Reform Support Unit, PMIU/Selection School Education & Literacy Department Govt. of Sindh",
         role: "Prime Contractor",
-        imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg"
+        imageUrl: "./ProcurementofCivilWorks.jpg"
 
       },
       {
@@ -50,7 +50,7 @@ const Projects = () => {
         contractAmount: "1,663,286,414 PKR",
         employer: "Chief Program Manager, Reform Support Unit, PMIU/Selection School Education & Literacy Department Govt. of Sindh",
         role: "Prime Contractor",
-        imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg"
+        imageUrl: "./schoolsinDistrictKashmore.jpg"
       },
       {
         startingYear: "2022",
@@ -60,10 +60,10 @@ const Projects = () => {
         contractAmount: "1,062,582,381 PKR",
         employer: "(PMO) Sindh barrages improvement project (SBIP)Irrigation Department Sindh",
         role: "Prime Contractor",
-        imageUrl: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80"
+        imageUrl: "./CONSTRUCIONOFRIGHTTJSPUROFGUUDUBARRAGE.jpg"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./RehabilitationofRukLoopBund.jpg",
         startingYear: "2022",
         endingYear: "2024",
         fundingSource: "World Bank financed",
@@ -77,7 +77,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./5project.jpg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "World Bank financed",
@@ -92,7 +92,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./6project.jpg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "World Bank financed",
@@ -106,7 +106,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./7project.jpg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "ADP SCHEMES",
@@ -120,7 +120,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./8project.jpg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "World Bank financed",
@@ -134,7 +134,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "World Bank financed",
@@ -148,7 +148,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./10project.jpg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "World Bank financed",
@@ -162,7 +162,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./11project.jpg",
         startingYear: "2022",
         endingYear: "2024",
         fundingSource: "ADP SCHEMES",
@@ -176,7 +176,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./12project.jpg",
         startingYear: "2022",
         endingYear: "2024",
         fundingSource: "ADP SCHEMES",
@@ -189,7 +189,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./13project.jpg",
         startingYear: "2022",
         endingYear: "2024",
         fundingSource: "ADP SCHEMES",
@@ -202,7 +202,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./14project.jpg",
         startingYear: "2022",
         endingYear: "2024",
         fundingSource: "ADP SCHEMES",
@@ -215,7 +215,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./15project.jpg",
         startingYear: "2022",
         endingYear: "2023",
         fundingSource: "Private sector",
@@ -226,7 +226,7 @@ const Projects = () => {
         role: "Sub-contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./16project.jpg",
         startingYear: "2021",
         endingYear: "2022",
         fundingSource: "World Bank financed",
@@ -240,7 +240,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./17project.jpg",
         startingYear: "2021",
         endingYear: "2022",
         fundingSource: "World Bank financed",
@@ -254,7 +254,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./18project.jpg",
         startingYear: "2021",
         endingYear: "2022",
         fundingSource: "World Bank financed",
@@ -268,7 +268,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./19project.jpg",
         startingYear: "2021",
         endingYear: "2022",
         fundingSource: "World Bank financed",
@@ -282,7 +282,7 @@ const Projects = () => {
         role: "JV"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./20project.jpg",
         startingYear: "2021",
         endingYear: "2022",
         fundingSource: "World Bank financed",
@@ -296,7 +296,7 @@ const Projects = () => {
         role: "JV"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./21project.jpg",
         startingYear: "2020",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -310,7 +310,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2020",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -324,7 +324,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2020",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -337,7 +337,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2019",
         endingYear: "2021",
         fundingSource: "PSDP SCHEMES",
@@ -351,7 +351,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2019",
         endingYear: "2020",
         fundingSource: "World Bank Financed",
@@ -365,7 +365,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2018",
         endingYear: "2019",
         fundingSource: "ADP SCHEMES",
@@ -377,7 +377,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2017",
         endingYear: "2017",
         fundingSource: "ADP SCHEMES",
@@ -389,7 +389,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2017",
         endingYear: "2018",
         fundingSource: "PSDP SCHEMES",
@@ -401,7 +401,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2017",
         endingYear: "2018",
         fundingSource: "ADP SCHEMES",
@@ -413,7 +413,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2015",
         endingYear: "2017",
         fundingSource: "ADP SCHEMES",
@@ -425,7 +425,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2015",
         endingYear: "2015",
         fundingSource: "ADP SCHEMES",
@@ -438,7 +438,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2015",
         endingYear: "2015",
         fundingSource: "ADP SCHEMES",
@@ -451,7 +451,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2015",
         endingYear: "2015",
         fundingSource: "ADP SCHEMES",
@@ -463,7 +463,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2011",
         endingYear: "2014",
         fundingSource: "PSDP SCHEMES",
@@ -475,7 +475,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2011",
         endingYear: "2016",
         fundingSource: "PSDP SCHEMES",
@@ -487,7 +487,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2014",
         endingYear: "2015",
         fundingSource: "ADP SCHEMES",
@@ -499,7 +499,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2014",
         endingYear: "2014",
         fundingSource: "ADP SCHEMES",
@@ -512,7 +512,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2014",
         endingYear: "2014",
         fundingSource: "ADP SCHEMES",
@@ -525,7 +525,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2014",
         endingYear: "2014",
         fundingSource: "ADP SCHEMES",
@@ -538,7 +538,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2014",
         endingYear: "2014",
         fundingSource: "ADP SCHEMES",
@@ -551,7 +551,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2012",
         endingYear: "2014",
         fundingSource: "ADP SCHEMES",
@@ -563,7 +563,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2011",
         endingYear: "2013",
         fundingSource: "ADP SCHEMES",
@@ -575,7 +575,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2011",
         endingYear: "2013",
         fundingSource: "ADP SCHEMES",
@@ -587,7 +587,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2009",
         endingYear: "2011",
         fundingSource: "ADP SCHEMES",
@@ -599,7 +599,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2009",
         endingYear: "2011",
         fundingSource: "ADP SCHEMES",
@@ -610,7 +610,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2009",
         endingYear: "2011",
         fundingSource: "ADP SCHEMES",
@@ -621,7 +621,7 @@ const Projects = () => {
         role: "Prime Contractor"
       },
       {
-       imageUrl: "https://media.universities.com/cache/post_xxl/images/blog/Construction-trade-school-students-looking-at-skyscraper-buliding-1668383983-637184efb6d5b.jpeg",
+       imageUrl: "./9project.jpg",
         startingYear: "2009",
         endingYear: "2011",
         fundingSource: "ADP SCHEMES",
