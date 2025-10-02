@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Header from './components/Heaer';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Team from './pages/Team';
 const App = () => {
   return (
     <Router>
@@ -20,6 +21,7 @@ const App = () => {
             {/* <Route path="/about" element={<About />} /> */}
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/team" element={<Team />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
