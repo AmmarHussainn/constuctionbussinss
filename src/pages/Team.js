@@ -9,6 +9,7 @@ import {
   Target,
   Shield
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Team = () => {
   const teamMembers = [
@@ -274,9 +275,11 @@ const Team = () => {
               We're always looking for talented professionals to join our growing team
             </p>
             
-            <button className="px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 shadow-2xl">
+            <Link
+            to="/contact"
+            className="px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 shadow-2xl">
               Get in Touch
-            </button>
+            </Link>
           </div>
         </div>
       </section>
