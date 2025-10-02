@@ -600,11 +600,11 @@ const Home = () => {
                 {/* Stats mini cards */}
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all">
-                    <div className="text-3xl font-black text-gray-900 mb-1">30+</div>
+                    <div className="text-3xl font-black text-gray-900 mb-1">35+</div>
                     <div className="text-sm text-gray-600 font-medium">Years Legacy</div>
                   </div>
                   <div className="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all">
-                    <div className="text-3xl font-black text-gray-900 mb-1">500+</div>
+                    <div className="text-3xl font-black text-gray-900 mb-1">100+</div>
                     <div className="text-sm text-gray-600 font-medium">Projects Done</div>
                   </div>
                 </div>

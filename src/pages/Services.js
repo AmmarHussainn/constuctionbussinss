@@ -366,7 +366,7 @@ const Services = () => {
                 Building Excellence, <span className="gradient-text">One Project at a Time</span>
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                With over 25 years of experience in civil construction and infrastructure development, we have established ourselves as a trusted partner for projects of all scales.
+                With over 35 years of experience in civil construction and infrastructure development, we have established ourselves as a trusted partner for projects of all scales.
               </p>
               <div className="space-y-4">
                 {[
@@ -394,7 +394,7 @@ const Services = () => {
               </div>
               <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl p-8 text-white hover-lift">
                 <Users className="mb-4" size={32} />
-                <div className="text-4xl font-black mb-2">500+</div>
+                <div className="text-4xl font-black mb-2">100+</div>
                 <div className="text-sm">Team Members</div>
               </div>
               <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl p-8 text-white hover-lift ">
