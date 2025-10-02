@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Send, 
-  CheckCircle, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Send,
+  CheckCircle,
   Award,
   Users,
   Clock,
@@ -25,7 +25,7 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
-const [isFormValid, setIsFormValid] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -40,7 +40,7 @@ const [isFormValid, setIsFormValid] = useState(false);
     );
 
 
-    
+
 
     document.querySelectorAll('.fade-in-up').forEach((el) => {
       observer.observe(el);
@@ -49,12 +49,22 @@ const [isFormValid, setIsFormValid] = useState(false);
     return () => observer.disconnect();
   }, []);
 
+  const isValidEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
 
-  // Add this useEffect to check form validity
-useEffect(() => {
-  const { name, email } = formData;
-  setIsFormValid(name.trim() !== '' && email.trim() !== '');
-}, [formData]);
+  useEffect(() => {
+    const { name, email, phoneNumber, projectType, projectDetails } = formData;
+    setIsFormValid(
+      name.trim() !== '' &&
+      isValidEmail(email) &&
+      phoneNumber.trim() !== '' &&
+      projectType.trim() !== '' &&
+      projectDetails.trim() !== ''
+    );
+  }, [formData]);
+
 
   const handleChange = (e) => {
     setFormData({
@@ -64,12 +74,11 @@ useEffect(() => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
     if (!isFormValid) {
-    setSubmitStatus('error');
-    return;
-  }
-
+      setSubmitStatus('error');
+      return;
+    }
 
     setIsSubmitting(true);
     setSubmitStatus(null);
@@ -77,9 +86,7 @@ useEffect(() => {
     try {
       const response = await fetch('https://voice-unitech.onrender.com/api/projects/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
 
@@ -253,13 +260,13 @@ useEffect(() => {
               <span className="text-yellow-400 text-sm font-semibold tracking-wide">GET IN TOUCH</span>
             </div>
           </div>
-          
+
           <h1 className="fade-in-up text-5xl md:text-7xl font-black text-white mb-6 leading-tight stagger-1">
             Let's Build Something
             <br />
             <span className="text-yellow-400">Extraordinary Together</span>
           </h1>
-          
+
           <p className="fade-in-up text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed stagger-2">
             Ready to transform your vision into reality? Our expert team is here to bring your construction project to life with precision and excellence
           </p>
@@ -270,7 +277,7 @@ useEffect(() => {
       <section className="py-20 md:py-32 bg-white relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
-            
+
             {/* LEFT SIDE - Contact Info */}
             <div className="lg:col-span-2 space-y-8">
               <div className="fade-in-up">
@@ -289,10 +296,10 @@ useEffect(() => {
               {/* Contact Cards */}
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
-                  <div 
+                  <div
                     key={index}
                     className="fade-in-up gradient-border hover-lift bg-white p-6 rounded-3xl shadow-lg border border-gray-100"
-                    style={{animationDelay: `${index * 0.15}s`}}
+                    style={{ animationDelay: `${index * 0.15}s` }}
                   >
                     <div className="flex items-start gap-4">
                       <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl flex items-center justify-center shadow-lg">
@@ -310,8 +317,8 @@ useEffect(() => {
                 ))}
               </div>
 
-            
-      
+
+
             </div>
 
             {/* RIGHT SIDE - Contact Form */}
@@ -408,33 +415,29 @@ useEffect(() => {
                   </div>
 
                   {/* Project Details */}
-                 {/* Project Details - Changed to Input Field */}
-<div>
-  <label className="block text-sm font-bold text-gray-900 mb-2 uppercase tracking-wide">
-    Project Details
-  </label>
-  <div className="relative">
-    <input
-      type="text"
-      name="projectDetails"
-      value={formData.projectDetails}
-      onChange={handleChange}
-      placeholder="Brief description of your project requirements..."
-      className="input-field w-full pl-4 pr-4 py-4 border-2 border-gray-200 rounded-2xl focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400 focus:ring-opacity-10 outline-none transition-all"
-    />
-  </div>
-</div>
+                  {/* Project Details - Changed to Input Field */}
+                  <div>
+                    <label className="block text-sm font-bold text-gray-900 mb-2 uppercase tracking-wide">
+                      Project Details
+                    </label>
+                    <div className="relative">
+                      <input
+                        type="text"
+                        name="projectDetails"
+                        value={formData.projectDetails}
+                        onChange={handleChange}
+                        placeholder="Brief description of your project requirements..."
+                        className="input-field w-full pl-4 pr-4 py-4 border-2 border-gray-200 rounded-2xl focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400 focus:ring-opacity-10 outline-none transition-all"
+                      />
+                    </div>
+                  </div>
 
                   {/* Submit Button */}
                   <button
-                   
-                   
                     type="submit"
-  disabled={isSubmitting || !isFormValid}
-  className={`group w-full py-5 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transform transition-all duration-300 ${
-    isSubmitting || !isFormValid ? 'opacity-50 cursor-not-allowed' : 'hover:scale-[1.02]'
-  }`}
-                   >
+                    disabled={isSubmitting || !isFormValid}
+                    className={`group w-full py-5 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transform transition-all duration-300 ${isSubmitting || !isFormValid ? 'opacity-50 cursor-not-allowed' : 'hover:scale-[1.02]'}`}
+                  >
                     {isSubmitting ? (
                       <>
                         <div className="w-5 h-5 border-3 border-gray-900 border-t-transparent rounded-full animate-spin"></div>
@@ -461,8 +464,8 @@ useEffect(() => {
                     <div className="flex items-center gap-3 p-4 bg-red-50 border-2 border-red-200 rounded-2xl">
                       <div className="w-6 h-6 rounded-full bg-red-600 flex items-center justify-center text-white font-bold flex-shrink-0">!</div>
                       <p className="text-red-800 font-semibold">
-                        {!formData.name || !formData.email 
-                          ? "Please fill in all required fields (Name and Email)." 
+                        {!formData.name || !formData.email
+                          ? "Please fill in all required fields (Name and Email)."
                           : "Something went wrong. Please try again."
                         }
                       </p>
@@ -493,7 +496,7 @@ useEffect(() => {
               <div
                 key={index}
                 className="fade-in-up gradient-border hover-lift bg-white p-8 rounded-3xl shadow-lg text-center border border-gray-100"
-                style={{animationDelay: `${index * 0.15}s`}}
+                style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-3xl mb-6 shadow-lg">
                   <feature.icon className="text-gray-900" size={32} strokeWidth={2.5} />
