@@ -59,7 +59,7 @@ const Home = () => {
   }, []);
 
   const stats = [
-    { value: 47, label: "Total Projects", icon: Award },
+    { value: "100+", label: "Total Projects", icon: Award },
     { value: "Rs. 18.5B+", label: "Portfolio Value", icon: DollarSign },
     { value: "100%", label: "Completion Rate", icon: TrendingUp },
     // { value: "World Bank", label: "International Funding", icon: Building2 },

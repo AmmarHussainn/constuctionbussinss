@@ -25,6 +25,7 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+const [isFormValid, setIsFormValid] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -38,12 +39,22 @@ const Contact = () => {
       { threshold: 0.1 }
     );
 
+
+    
+
     document.querySelectorAll('.fade-in-up').forEach((el) => {
       observer.observe(el);
     });
 
     return () => observer.disconnect();
   }, []);
+
+
+  // Add this useEffect to check form validity
+useEffect(() => {
+  const { name, email } = formData;
+  setIsFormValid(name.trim() !== '' && email.trim() !== '');
+}, [formData]);
 
   const handleChange = (e) => {
     setFormData({
@@ -54,11 +65,11 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
-    
-    if (!formData.name || !formData.email) {
-      setSubmitStatus('error');
-      return;
-    }
+    if (!isFormValid) {
+    setSubmitStatus('error');
+    return;
+  }
+
 
     setIsSubmitting(true);
     setSubmitStatus(null);
@@ -416,10 +427,14 @@ const Contact = () => {
 
                   {/* Submit Button */}
                   <button
+                   
+                   
                     type="submit"
-                    disabled={isSubmitting}
-                    className="group w-full py-5 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
+  disabled={isSubmitting || !isFormValid}
+  className={`group w-full py-5 bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-900 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl transform transition-all duration-300 ${
+    isSubmitting || !isFormValid ? 'opacity-50 cursor-not-allowed' : 'hover:scale-[1.02]'
+  }`}
+                   >
                     {isSubmitting ? (
                       <>
                         <div className="w-5 h-5 border-3 border-gray-900 border-t-transparent rounded-full animate-spin"></div>
