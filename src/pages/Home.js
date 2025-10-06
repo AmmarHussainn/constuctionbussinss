@@ -438,7 +438,7 @@ const Home = () => {
                     <img
                       src={leader.image}
                       alt={leader.name}
-                      className="w-full h-full object-center  transition-all duration-500 group-hover:scale-110"
+                      className="w-full h-full   transition-all duration-500 group-hover:scale-110"
                     />
                   </div>
                   <div className="text-center">
