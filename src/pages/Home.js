@@ -1,14 +1,9 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from 'react';
 import {
   CheckCircle,
   Award,
-  Users,
-  Calendar,
   ArrowRight,
-  Play,
-  Pause,
   TrendingUp,
-  Building2,
   DollarSign,
   Shield,
   Target,
@@ -17,21 +12,20 @@ import {
   Layers,
   Globe,
   Star,
-  ChevronRight,
-} from "lucide-react";
-import { Link } from "react-router-dom";
+} from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-const bgVideo = "./loop.mp4";
-const bgImage1 = "./1.png";
-const bgImage2 = "./3.png";
-const bgImage4 = "./2.jpg";
-const bgImage3 = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80";
+const bgVideo = './loop.mp4';
+const bgImage1 = './1.png';
+const bgImage2 = './3.png';
+
+const bgImage3 =
+  'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80';
 
 const Home = () => {
   const [scrollY, setScrollY] = useState(0);
-  const [isVideoPlaying, setIsVideoPlaying] = useState(true);
+
   const videoRef = useRef(null);
-  const [activeTab, setActiveTab] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -44,14 +38,14 @@ const Home = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("animate-in");
+            entry.target.classList.add('animate-in');
           }
         });
       },
       { threshold: 0.1 }
     );
 
-    document.querySelectorAll(".fade-in-up").forEach((el) => {
+    document.querySelectorAll('.fade-in-up').forEach((el) => {
       observer.observe(el);
     });
 
@@ -59,130 +53,135 @@ const Home = () => {
   }, []);
 
   const stats = [
-    { value: "100+", label: "Total Projects", icon: Award },
-    { value: "Rs. 18.5B+", label: "Portfolio Value", icon: DollarSign },
-    { value: "100%", label: "Completion Rate", icon: TrendingUp },
+    { value: '100+', label: 'Total Projects', icon: Award },
+    { value: 'Rs. 18.5B+', label: 'Portfolio Value', icon: DollarSign },
+    { value: '100%', label: 'Completion Rate', icon: TrendingUp },
     // { value: "World Bank", label: "International Funding", icon: Building2 },
   ];
 
   const services = [
     {
       icon: Layers,
-      title: "Irrigation Systems",
-      desc: "Advanced irrigation infrastructure designed for maximum water efficiency and agricultural productivity enhancement.",
+      title: 'Irrigation Systems',
+      desc: 'Advanced irrigation infrastructure designed for maximum water efficiency and agricultural productivity enhancement.',
       img: bgImage1,
-      features: ["Canal Construction", "Drainage Systems", "Water Distribution"]
+      features: [
+        'Canal Construction',
+        'Drainage Systems',
+        'Water Distribution',
+      ],
     },
     {
       icon: Globe,
-      title: "Water Management",
-      desc: "Comprehensive water management solutions including canals, reservoirs, and distribution systems.",
+      title: 'Water Management',
+      desc: 'Comprehensive water management solutions including canals, reservoirs, and distribution systems.',
       img: bgImage2,
-      features: ["Reservoir Development", "Canal Lining", "Flow Control"]
+      features: ['Reservoir Development', 'Canal Lining', 'Flow Control'],
     },
     {
       icon: Box,
-      title: "Infrastructure Development",
-      desc: "Large-scale infrastructure projects including bridges, roads, and comprehensive urban development.",
+      title: 'Infrastructure Development',
+      desc: 'Large-scale infrastructure projects including bridges, roads, and comprehensive urban development.',
       img: bgImage3,
-      features: ["Bridge Construction", "Road Development", "Urban Planning"]
+      features: ['Bridge Construction', 'Road Development', 'Urban Planning'],
     },
   ];
 
   const coreValues = [
     {
       icon: Shield,
-      title: "Integrity",
-      desc: "Honesty and transparency in all our business dealings and partnerships."
+      title: 'Integrity',
+      desc: 'Honesty and transparency in all our business dealings and partnerships.',
     },
     {
       icon: Target,
-      title: "Excellence",
-      desc: "Maintaining the highest quality standards in every project we undertake."
+      title: 'Excellence',
+      desc: 'Maintaining the highest quality standards in every project we undertake.',
     },
     {
       icon: Zap,
-      title: "Innovation",
-      desc: "Embracing modern techniques and sustainable construction practices."
+      title: 'Innovation',
+      desc: 'Embracing modern techniques and sustainable construction practices.',
     },
     {
       icon: CheckCircle,
-      title: "Safety",
-      desc: "Implementing comprehensive safety standards across all operations."
+      title: 'Safety',
+      desc: 'Implementing comprehensive safety standards across all operations.',
     },
   ];
 
   return (
-    <div className="bg-white text-gray-900 overflow-hidden">
+    <div className='bg-white text-gray-900 overflow-hidden'>
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-        
+
         * {
           font-family: 'Inter', sans-serif;
         }
-        
+
         .fade-in-up {
           opacity: 0;
           transform: translateY(60px);
           transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        
+
         .fade-in-up.animate-in {
           opacity: 1;
           transform: translateY(0);
         }
-        
+
         .glass-morphism {
           background: rgba(255, 255, 255, 0.95);
           backdrop-filter: blur(20px);
           border: 1px solid rgba(0, 0, 0, 0.05);
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
         }
-        
+
         .hover-scale {
           transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        
+
         .hover-scale:hover {
           transform: scale(1.05);
         }
-        
+
         .hover-lift {
           transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        
+
         .hover-lift:hover {
           transform: translateY(-12px);
         }
-        
+
         .gradient-border {
           position: relative;
           background: white;
         }
-        
+
         .gradient-border::before {
           content: '';
           position: absolute;
           inset: 0;
           border-radius: inherit;
           padding: 2px;
-          background: linear-gradient(135deg, #FBBF24, #F59E0B, #FBBF24);
-          -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          background: linear-gradient(135deg, #fbbf24, #f59e0b, #fbbf24);
+          -webkit-mask: linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
           -webkit-mask-composite: xor;
           mask-composite: exclude;
           opacity: 0;
           transition: opacity 0.4s ease;
         }
-        
+
         .gradient-border:hover::before {
           opacity: 1;
         }
-        
+
         .accent-line {
           position: relative;
           padding-left: 20px;
         }
-        
+
         .accent-line::before {
           content: '';
           position: absolute;
@@ -191,65 +190,69 @@ const Home = () => {
           transform: translateY(-50%);
           width: 4px;
           height: 100%;
-          background: linear-gradient(to bottom, #FBBF24, #F59E0B);
+          background: linear-gradient(to bottom, #fbbf24, #f59e0b);
           border-radius: 2px;
         }
-        
+
         .parallax-slow {
           transform: translateY(${scrollY * 0.5}px);
         }
-        
+
         .parallax-fast {
           transform: translateY(${scrollY * -0.3}px);
         }
-        
+
         .section-padding {
           padding: 120px 0;
         }
-        
+
         @media (max-width: 768px) {
           .section-padding {
             padding: 80px 0;
           }
         }
-        
+
         .video-overlay {
-          background: linear-gradient(135deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.5) 100%);
+          background: linear-gradient(
+            135deg,
+            rgba(0, 0, 0, 0.75) 0%,
+            rgba(0, 0, 0, 0.5) 100%
+          );
         }
-        
+
         .number-gradient {
-          background: linear-gradient(135deg, #1F2937 0%, #374151 100%);
+          background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
         }
-        
+
         .feature-icon {
-          background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+          background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
         }
-        
+
         .leadership-image {
           position: relative;
           overflow: hidden;
         }
-        
+
         .leadership-image::after {
           content: '';
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(245, 158, 11, 0.1) 100%);
+         
           opacity: 0;
           transition: opacity 0.4s ease;
         }
-        
+
         .leadership-image:hover::after {
           opacity: 1;
         }
-        
+
         .animated-border {
           position: relative;
         }
-        
+
         .animated-border::after {
           content: '';
           position: absolute;
@@ -257,38 +260,55 @@ const Home = () => {
           left: 0;
           width: 0;
           height: 3px;
-          background: linear-gradient(to right, #FBBF24, #F59E0B);
+          background: linear-gradient(to right, #fbbf24, #f59e0b);
           transition: width 0.4s ease;
         }
-        
+
         .animated-border:hover::after {
           width: 100%;
         }
-        
+
         .project-card-overlay {
-          background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.9) 100%);
+          background: linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(0, 0, 0, 0.9) 100%
+          );
         }
-        
+
         .floating-element {
           animation: float 6s ease-in-out infinite;
         }
-        
+
         @keyframes float {
-          0%, 100% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-20px) rotate(5deg); }
+          0%,
+          100% {
+            transform: translateY(0px) rotate(0deg);
+          }
+          50% {
+            transform: translateY(-20px) rotate(5deg);
+          }
         }
-        
-        .stagger-1 { animation-delay: 0.1s; }
-        .stagger-2 { animation-delay: 0.2s; }
-        .stagger-3 { animation-delay: 0.3s; }
-        .stagger-4 { animation-delay: 0.4s; }
+
+        .stagger-1 {
+          animation-delay: 0.1s;
+        }
+        .stagger-2 {
+          animation-delay: 0.2s;
+        }
+        .stagger-3 {
+          animation-delay: 0.3s;
+        }
+        .stagger-4 {
+          animation-delay: 0.4s;
+        }
       `}</style>
 
       {/* HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className='relative min-h-screen flex items-center justify-center overflow-hidden'>
         <video
           ref={videoRef}
-          className="absolute inset-0 w-full h-full object-cover"
+          className='absolute inset-0 w-full h-full object-cover'
           src={bgVideo}
           autoPlay
           loop
@@ -296,71 +316,71 @@ const Home = () => {
           playsInline
         />
 
-        <div className="absolute inset-0 video-overlay" />
+        <div className='absolute inset-0 video-overlay' />
 
-
-
-
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
-          <div className="fade-in-up mb-6">
-            <div className="inline-block px-4 py-2 bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-full mb-8">
-              <span className="text-yellow-400 text-sm font-semibold tracking-wide">EXCELLENCE IN CIVIL CONSTRUCTION</span>
+        <div className='relative z-10 max-w-7xl mx-auto px-6 text-center'>
+          <div className='fade-in-up mb-6'>
+            <div className='inline-block px-4 py-2 bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-full mb-8'>
+              <span className='text-yellow-400 text-sm font-semibold tracking-wide'>
+                EXCELLENCE IN CIVIL CONSTRUCTION
+              </span>
             </div>
           </div>
 
-          <h1 className="fade-in-up text-5xl md:text-8xl font-black text-white mb-6 leading-tight tracking-tight stagger-1">
-            M/S <span className="text-yellow-400">HBAS & CO</span>
+          <h1 className='fade-in-up text-5xl md:text-8xl font-black text-white mb-6 leading-tight tracking-tight stagger-1'>
+            M/S <span className='text-yellow-400'>HBAS & CO</span>
           </h1>
 
-          <p className="fade-in-up text-xl md:text-3xl text-gray-100 mb-6 font-light stagger-2 max-w-4xl mx-auto">
+          <p className='fade-in-up text-xl md:text-3xl text-gray-100 mb-6 font-light stagger-2 max-w-4xl mx-auto'>
             Building Pakistan's Future Infrastructure
           </p>
 
-          <p className="fade-in-up text-base md:text-lg text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed stagger-3">
-            Leading civil contractor specializing in irrigation systems, water management, and large-scale infrastructure projects across Pakistan
+          <p className='fade-in-up text-base md:text-lg text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed stagger-3'>
+            Leading civil contractor specializing in irrigation systems, water
+            management, and large-scale infrastructure projects across Pakistan
           </p>
 
-          <div className="fade-in-up flex flex-col sm:flex-row gap-6 justify-center stagger-4">
+          <div className='fade-in-up flex flex-col sm:flex-row gap-6 justify-center stagger-4'>
             <Link
-              to="/projects"
-              className="group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl hover:shadow-yellow-400/50">
+              to='/projects'
+              className='group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl hover:shadow-yellow-400/50'
+            >
               View Our Projects
-              <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} />
+              <ArrowRight
+                className='group-hover:translate-x-1 transition-transform'
+                size={22}
+              />
             </Link>
             <Link
-              to="/contact"
-              className="px-10 py-5 border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 shadow-2xl">
+              to='/contact'
+              className='px-10 py-5 border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300 shadow-2xl'
+            >
               Contact Us
             </Link>
           </div>
         </div>
-
-
       </section>
 
-
-
       {/* FOUNDER'S LEGACY SECTION */}
-      <section className="section-padding bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
+      <section className='section-padding bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden'>
         {/* Decorative elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_50%,_#FBBF24_0%,_transparent_50%)]"></div>
-          <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_50%,_#F59E0B_0%,_transparent_50%)]"></div>
+        <div className='absolute inset-0 opacity-10'>
+          <div className='absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_50%,_#FBBF24_0%,_transparent_50%)]'></div>
+          <div className='absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_50%,_#F59E0B_0%,_transparent_50%)]'></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className='max-w-7xl mx-auto px-6 relative z-10'>
+          <div className='grid lg:grid-cols-2 gap-16 items-center'>
             {/* Image Section */}
-            <div className="fade-in-up">
-              <div className="relative">
+            <div className='fade-in-up'>
+              <div className='relative'>
                 {/* Decorative frame */}
 
                 <img
-                  src="./bashirahmed.jpeg"
-                  alt="Bashir Ahmed - Founder"
-                  className="w-full aspect-square object-contain rounded-3xl overflow-hidden  hover-scale"
+                  src='./bashirahmed.jpeg'
+                  alt='Bashir Ahmed - Founder'
+                  className='w-full aspect-square object-contain rounded-3xl overflow-hidden  hover-scale'
                 />
-
 
                 {/* Decorative quote mark */}
                 {/* <div className="absolute -top-6 -left-6 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center text-gray-900 text-6xl font-serif leading-none">
@@ -370,41 +390,61 @@ const Home = () => {
             </div>
 
             {/* Content Section */}
-            <div className="fade-in-up stagger-2">
-              <div className="inline-block px-4 py-2 bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-full mb-6">
-                <span className="text-yellow-400 text-sm font-semibold tracking-wide">IN LOVING MEMORY</span>
+            <div className='fade-in-up stagger-2'>
+              <div className='inline-block px-4 py-2 bg-yellow-400 bg-opacity-10 border border-yellow-400 border-opacity-30 rounded-full mb-6'>
+                <span className='text-yellow-400 text-sm font-semibold tracking-wide'>
+                  IN LOVING MEMORY
+                </span>
               </div>
 
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
-                Founder's <span className="text-yellow-400">Legacy</span>
+              <h2 className='text-4xl md:text-5xl font-black text-white mb-6 leading-tight'>
+                Founder's <span className='text-yellow-400'>Legacy</span>
               </h2>
 
-              <div className="w-20 h-1 bg-yellow-400 mb-8"></div>
+              <div className='w-20 h-1 bg-yellow-400 mb-8'></div>
 
-              <div className="space-y-6 text-gray-300 leading-relaxed text-lg">
+              <div className='space-y-6 text-gray-300 leading-relaxed text-lg'>
                 <p>
-                  HBAS & CO stands upon the timeless vision, dedication, and integrity of our beloved founder, <strong className="text-white">Bashir Ahmed</strong>. He was more than a mentor—he was an inspiration, a guide, and the heart behind every milestone this company has achieved.
+                  HBAS & CO stands upon the timeless vision, dedication, and
+                  integrity of our beloved founder,{' '}
+                  <strong className='text-white'>Bashir Ahmed</strong>. He was
+                  more than a mentor—he was an inspiration, a guide, and the
+                  heart behind every milestone this company has achieved.
                 </p>
 
                 <p>
-                  Through his unwavering honesty, tireless hard work, and commitment to keeping his word, he laid the foundation that continues to guide us today. His values of trust, perseverance, and faith remain the pillars of HBAS & CO.
+                  Through his unwavering honesty, tireless hard work, and
+                  commitment to keeping his word, he laid the foundation that
+                  continues to guide us today. His values of trust,
+                  perseverance, and faith remain the pillars of HBAS & CO.
                 </p>
 
                 <p>
-                  Every step we take forward is a reflection of his enduring spirit. This company's growth is not just a business journey, but also a tribute to the man whose honesty and determination made HBAS & CO what it is today.
+                  Every step we take forward is a reflection of his enduring
+                  spirit. This company's growth is not just a business journey,
+                  but also a tribute to the man whose honesty and determination
+                  made HBAS & CO what it is today.
                 </p>
 
-                <div className="bg-white bg-opacity-5 border border-yellow-400 border-opacity-20 rounded-2xl p-6 backdrop-blur-sm">
-                  <p className="text-yellow-400 italic font-medium">
-                    "Though he is no longer with us, his vision lives on in our work, our values, and our commitment to excellence. He will forever remain our greatest inspiration."
+                <div className='bg-white bg-opacity-5 border border-yellow-400 border-opacity-20 rounded-2xl p-6 backdrop-blur-sm'>
+                  <p className='text-yellow-400 italic font-medium'>
+                    "Though he is no longer with us, his vision lives on in our
+                    work, our values, and our commitment to excellence. He will
+                    forever remain our greatest inspiration."
                   </p>
                 </div>
               </div>
 
               {/* Memorial badge */}
-              <div className="mt-8 inline-flex items-center gap-3 px-6 py-4 bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-full">
-                <Star className="text-yellow-400" size={24} fill="currentColor" />
-                <span className="text-white font-bold">Forever in Our Hearts</span>
+              <div className='mt-8 inline-flex items-center gap-3 px-6 py-4 bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 rounded-full'>
+                <Star
+                  className='text-yellow-400'
+                  size={24}
+                  fill='currentColor'
+                />
+                <span className='text-white font-bold'>
+                  Forever in Our Hearts
+                </span>
               </div>
             </div>
           </div>
@@ -412,40 +452,56 @@ const Home = () => {
       </section>
 
       {/* LEADERSHIP SECTION */}
-      <section className="section-padding bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20">
-            <div className="fade-in-up inline-block px-4 py-2 bg-gray-50 rounded-full mb-6">
-              <span className="text-yellow-400 text-sm font-bold tracking-widest">OUR LEADERSHIP</span>
+      <section className='section-padding bg-white'>
+        <div className='max-w-7xl mx-auto px-6'>
+          <div className='text-center mb-20'>
+            <div className='fade-in-up inline-block px-4 py-2 bg-gray-50 rounded-full mb-6'>
+              <span className='text-yellow-400 text-sm font-bold tracking-widest'>
+                OUR LEADERSHIP
+              </span>
             </div>
-            <h2 className="fade-in-up text-4xl md:text-6xl font-black text-gray-900 mb-6 stagger-1">
+            <h2 className='fade-in-up text-4xl md:text-6xl font-black text-gray-900 mb-6 stagger-1'>
               Visionary Leaders
             </h2>
-            <p className="fade-in-up text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed stagger-2">
-              Experienced professionals driving innovation and excellence in the construction industry
+            <p className='fade-in-up text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed stagger-2'>
+              Experienced professionals driving innovation and excellence in the
+              construction industry
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
+          <div className='grid md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto'>
             {[
-              { name: "Furqan Ali Soomro", position: "Principal Partner  and Managing Director", image: "./Furqan_Ahmed.png" },
-              { name: "Adnan Ali Soomro", position: "Associate Partner", image: "./AdnanAli.png" },
+              {
+                name: 'Furqan Ali Soomro',
+                position: 'Principal Partner  and Managing Director',
+                image: './Furqan_Ahmed.png',
+              },
+              {
+                name: 'Adnan Ali Soomro',
+                position: 'Associate Partner',
+                image: './AdnanAli.png',
+              },
               // { name: "Muhammad Rashid", position: "General Manager", image: "./Rashid.png" }
             ].map((leader, i) => (
-              <div key={i} className="fade-in-up" style={{ animationDelay: `${i * 0.15}s` }}>
-                <div className="group relative">
-                  <div className="leadership-image  aspect-square rounded-3xl overflow-hidden mb-6 hover-lift shadow-2xl">
+              <div
+                key={i}
+                // className='fade-in-up'
+                style={{ animationDelay: `${i * 0.15}s` }}
+              >
+                <div className='group relative'>
+                  <div className='leadership-image   overflow-hidden mb-6 hover-lift  h-[420px] flex items-center justify-center '>
                     <img
                       src={leader.image}
                       alt={leader.name}
-                      className="w-full h-full   transition-all duration-500 group-hover:scale-110"
+                      className='max-h-full w-auto   transition-all duration-500 group-hover:scale-105'
                     />
                   </div>
-                  <div className="text-center">
-                    <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+
+                  <div className='text-center'>
+                    <h3 className='text-2xl md:text-3xl font-bold text-gray-900 mb-2'>
                       {leader.name}
                     </h3>
-                    <p className="text-yellow-400 font-semibold text-base md:text-lg">
+                    <p className='text-yellow-400 font-semibold text-base md:text-lg'>
                       {leader.position}
                     </p>
                   </div>
@@ -457,20 +513,32 @@ const Home = () => {
       </section>
 
       {/* STATS SECTION */}
-      <section className="py-20 bg-gray-50">
-        <h2 className="fade-in-up mx-auto text-center text-4xl md:text-6xl font-black text-gray-900 mb-6 stagger-1">
+      <section className='py-20 bg-gray-50'>
+        <h2 className='fade-in-up mx-auto text-center text-4xl md:text-6xl font-black text-gray-900 mb-6 stagger-1'>
           Our Numbers
         </h2>
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8">
+        <div className='max-w-7xl mx-auto px-6'>
+          <div className='grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8'>
             {stats.map((stat, i) => (
-              <div key={i} className="fade-in-up text-center rounded-3xl hover-lift" style={{ animationDelay: `${i * 0.1}s` }}>
-                <div className="bg-white rounded-3xl p-8 shadow-lg border border-gray-100">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-yellow-400 bg-opacity-10 mb-4">
-                    <stat.icon className="text-yellow-400" size={28} strokeWidth={2} />
+              <div
+                key={i}
+                className='fade-in-up text-center rounded-3xl hover-lift'
+                style={{ animationDelay: `${i * 0.1}s` }}
+              >
+                <div className='bg-white rounded-3xl p-8 shadow-lg border border-gray-100'>
+                  <div className='inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-yellow-400 bg-opacity-10 mb-4'>
+                    <stat.icon
+                      className='text-yellow-400'
+                      size={28}
+                      strokeWidth={2}
+                    />
                   </div>
-                  <div className="text-3xl md:text-4xl font-black text-gray-900 mb-2">{stat.value}</div>
-                  <div className="text-sm md:text-base text-gray-600 font-medium">{stat.label}</div>
+                  <div className='text-3xl md:text-4xl font-black text-gray-900 mb-2'>
+                    {stat.value}
+                  </div>
+                  <div className='text-sm md:text-base text-gray-600 font-medium'>
+                    {stat.label}
+                  </div>
                 </div>
               </div>
             ))}
@@ -494,50 +562,64 @@ const Home = () => {
       </section> */}
 
       {/* OUR STORY */}
-      <section className="section-padding bg-gray-50 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-yellow-400 to-transparent opacity-5"></div>
+      <section className='section-padding bg-gray-50 relative overflow-hidden'>
+        <div className='absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-yellow-400 to-transparent opacity-5'></div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="fade-in-up">
-              <div className="inline-block px-4 py-2 bg-white rounded-full mb-6 shadow-md">
-                <span className="text-yellow-400 text-sm font-bold tracking-widest">SINCE 1990</span>
+        <div className='max-w-7xl mx-auto px-6 relative z-10'>
+          <div className='grid md:grid-cols-2 gap-16 items-center'>
+            <div className='fade-in-up'>
+              <div className='inline-block px-4 py-2 bg-white rounded-full mb-6 shadow-md'>
+                <span className='text-yellow-400 text-sm font-bold tracking-widest'>
+                  SINCE 1990
+                </span>
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6">
+              <h2 className='text-4xl md:text-5xl font-black text-gray-900 mb-6'>
                 Our Story
               </h2>
-              <div className="w-20 h-1 bg-yellow-400 mb-8"></div>
+              <div className='w-20 h-1 bg-yellow-400 mb-8'></div>
 
-              <div className="space-y-6 text-gray-700 leading-relaxed">
-                <p className="text-lg">
-                  Founded in 1990 by <strong className="text-gray-900">Mr. Basheer Ahmed Soomro</strong>,
-                  our company was built on a vision to contribute meaningfully to Pakistan's construction
-                  and development sector.
+              <div className='space-y-6 text-gray-700 leading-relaxed'>
+                <p className='text-lg'>
+                  Founded in 1990 by{' '}
+                  <strong className='text-gray-900'>
+                    Mr. Basheer Ahmed Soomro
+                  </strong>
+                  , our company was built on a vision to contribute meaningfully
+                  to Pakistan's construction and development sector.
                 </p>
-                <p className="text-lg">
-                  Through unwavering dedication, hard work, and professional commitment, we earned
-                  recognition for delivering quality projects, especially in irrigation and infrastructure.
+                <p className='text-lg'>
+                  Through unwavering dedication, hard work, and professional
+                  commitment, we earned recognition for delivering quality
+                  projects, especially in irrigation and infrastructure.
                 </p>
               </div>
             </div>
 
-            <div className="fade-in-up stagger-2">
-              <div className="glass-morphism p-10 rounded-3xl">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Legacy Continues</h3>
-                <div className="space-y-6 text-gray-700 leading-relaxed">
+            <div className='fade-in-up stagger-2'>
+              <div className='glass-morphism p-10 rounded-3xl'>
+                <h3 className='text-2xl font-bold text-gray-900 mb-6'>
+                  Legacy Continues
+                </h3>
+                <div className='space-y-6 text-gray-700 leading-relaxed'>
                   <p>
-                    Today, experienced professionals carry forward his legacy, expanding our services
-                    and strengthening our reputation across Pakistan.
+                    Today, experienced professionals carry forward his legacy,
+                    expanding our services and strengthening our reputation
+                    across Pakistan.
                   </p>
                   <p>
-                    Under dynamic leadership, we've undertaken major projects in irrigation, canal lining,
-                    small dams, and large-scale structures, ensuring timely delivery with uncompromising
+                    Under dynamic leadership, we've undertaken major projects in
+                    irrigation, canal lining, small dams, and large-scale
+                    structures, ensuring timely delivery with uncompromising
                     quality and professionalism.
                   </p>
                 </div>
-                <div className="mt-8 flex items-center gap-4">
-                  <div className="flex-1 h-2 bg-yellow-400 rounded-full"></div>
-                  <Star className="text-yellow-400" size={24} fill="currentColor" />
+                <div className='mt-8 flex items-center gap-4'>
+                  <div className='flex-1 h-2 bg-yellow-400 rounded-full'></div>
+                  <Star
+                    className='text-yellow-400'
+                    size={24}
+                    fill='currentColor'
+                  />
                 </div>
               </div>
             </div>
@@ -546,114 +628,138 @@ const Home = () => {
       </section>
 
       {/* MISSION & VALUES */}
-      <section className="section-padding bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+      <section className='section-padding bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden'>
         {/* Decorative background elements */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/4 left-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl opacity-5"></div>
-          <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl opacity-5"></div>
+        <div className='absolute inset-0 pointer-events-none'>
+          <div className='absolute top-1/4 left-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl opacity-5'></div>
+          <div className='absolute bottom-1/4 right-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl opacity-5'></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-5 gap-12 items-start">
+        <div className='max-w-7xl mx-auto px-6 relative z-10'>
+          <div className='grid lg:grid-cols-5 gap-12 items-start'>
             {/* Mission - Takes 2 columns */}
-            <div className="lg:col-span-2 fade-in-up">
-              <div className="sticky top-24">
-                <div className="inline-block px-4 py-2 bg-white shadow-sm rounded-full mb-6 border border-gray-100">
-                  <span className="text-yellow-400 text-sm font-bold tracking-widest">OUR MISSION</span>
+            <div className='lg:col-span-2 fade-in-up'>
+              <div className='sticky top-24'>
+                <div className='inline-block px-4 py-2 bg-white shadow-sm rounded-full mb-6 border border-gray-100'>
+                  <span className='text-yellow-400 text-sm font-bold tracking-widest'>
+                    OUR MISSION
+                  </span>
                 </div>
 
-                <h3 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">
+                <h3 className='text-4xl md:text-5xl font-black text-gray-900 mb-6 leading-tight'>
                   Mission Statement
                 </h3>
 
-                <div className="relative">
+                <div className='relative'>
                   {/* Decorative line */}
-                  <div className="absolute -left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-400 via-yellow-500 to-yellow-400 rounded-full"></div>
+                  <div className='absolute -left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-400 via-yellow-500 to-yellow-400 rounded-full'></div>
 
-                  <div className="bg-white border border-gray-100 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-yellow-400">
-                    <div className="flex items-start gap-4 mb-6">
-                      <div className="flex-shrink-0 w-12 h-12 bg-yellow-400 rounded-2xl flex items-center justify-center">
-                        <Target className="text-gray-900" size={24} strokeWidth={2.5} />
+                  <div className='bg-white border border-gray-100 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:border-yellow-400'>
+                    <div className='flex items-start gap-4 mb-6'>
+                      <div className='flex-shrink-0 w-12 h-12 bg-yellow-400 rounded-2xl flex items-center justify-center'>
+                        <Target
+                          className='text-gray-900'
+                          size={24}
+                          strokeWidth={2.5}
+                        />
                       </div>
-                      <div className="flex-1">
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                          Deliver sustainable and innovative engineering solutions in irrigation, water management,
-                          and infrastructure development that contribute to Pakistan's growth and prosperity.
+                      <div className='flex-1'>
+                        <p className='text-lg text-gray-700 leading-relaxed'>
+                          Deliver sustainable and innovative engineering
+                          solutions in irrigation, water management, and
+                          infrastructure development that contribute to
+                          Pakistan's growth and prosperity.
                         </p>
                       </div>
                     </div>
 
-                    <div className="flex items-center justify-between pt-6 border-t border-gray-100">
-                      <div className="flex items-center gap-3 text-yellow-400">
+                    <div className='flex items-center justify-between pt-6 border-t border-gray-100'>
+                      <div className='flex items-center gap-3 text-yellow-400'>
                         <TrendingUp size={22} strokeWidth={2.5} />
-                        <span className="font-bold text-gray-900">Building for Tomorrow</span>
+                        <span className='font-bold text-gray-900'>
+                          Building for Tomorrow
+                        </span>
                       </div>
-                      <div className="flex gap-1">
-                        <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                        <div className="w-2 h-2 bg-yellow-400 rounded-full opacity-60"></div>
-                        <div className="w-2 h-2 bg-yellow-400 rounded-full opacity-30"></div>
+                      <div className='flex gap-1'>
+                        <div className='w-2 h-2 bg-yellow-400 rounded-full'></div>
+                        <div className='w-2 h-2 bg-yellow-400 rounded-full opacity-60'></div>
+                        <div className='w-2 h-2 bg-yellow-400 rounded-full opacity-30'></div>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Stats mini cards */}
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all">
-                    <div className="text-3xl font-black text-gray-900 mb-1">35+</div>
-                    <div className="text-sm text-gray-600 font-medium">Years Legacy</div>
+                <div className='grid grid-cols-2 gap-4 mt-8'>
+                  <div className='bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all'>
+                    <div className='text-3xl font-black text-gray-900 mb-1'>
+                      35+
+                    </div>
+                    <div className='text-sm text-gray-600 font-medium'>
+                      Years Legacy
+                    </div>
                   </div>
-                  <div className="bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all">
-                    <div className="text-3xl font-black text-gray-900 mb-1">100+</div>
-                    <div className="text-sm text-gray-600 font-medium">Projects Done</div>
+                  <div className='bg-white border border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all'>
+                    <div className='text-3xl font-black text-gray-900 mb-1'>
+                      100+
+                    </div>
+                    <div className='text-sm text-gray-600 font-medium'>
+                      Projects Done
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Core Values - Takes 3 columns */}
-            <div className="lg:col-span-3 fade-in-up stagger-2">
-              <div className="inline-block px-4 py-2 bg-white shadow-sm rounded-full mb-6 border border-gray-100">
-                <span className="text-yellow-400 text-sm font-bold tracking-widest">CORE VALUES</span>
+            <div className='lg:col-span-3 fade-in-up stagger-2'>
+              <div className='inline-block px-4 py-2 bg-white shadow-sm rounded-full mb-6 border border-gray-100'>
+                <span className='text-yellow-400 text-sm font-bold tracking-widest'>
+                  CORE VALUES
+                </span>
               </div>
 
-              <h3 className="text-4xl md:text-5xl font-black text-gray-900 mb-8 leading-tight">
+              <h3 className='text-4xl md:text-5xl font-black text-gray-900 mb-8 leading-tight'>
                 What Drives Us
               </h3>
 
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className='grid sm:grid-cols-2 gap-6'>
                 {coreValues.map((value, i) => (
                   <div
                     key={i}
-                    className="group relative bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-yellow-400"
+                    className='group relative bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-yellow-400'
                     style={{ animationDelay: `${i * 0.1}s` }}
                   >
                     {/* Corner accent */}
-                    <div className="absolute top-0 right-0 w-20 h-20 bg-yellow-400 opacity-0 group-hover:opacity-10 rounded-bl-full transition-opacity duration-500"></div>
+                    <div className='absolute top-0 right-0 w-20 h-20 bg-yellow-400 opacity-0 group-hover:opacity-10 rounded-bl-full transition-opacity duration-500'></div>
 
                     {/* Icon */}
-                    <div className="relative mb-6">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <value.icon className="text-gray-900" size={28} strokeWidth={2.5} />
+                    <div className='relative mb-6'>
+                      <div className='inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-2xl shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-500'>
+                        <value.icon
+                          className='text-gray-900'
+                          size={28}
+                          strokeWidth={2.5}
+                        />
                       </div>
                       {/* Number badge */}
-                      <div className="absolute -top-2 -right-2 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-black">
+                      <div className='absolute -top-2 -right-2 w-8 h-8 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-black'>
                         {(i + 1).toString().padStart(2, '0')}
                       </div>
                     </div>
 
                     {/* Content */}
                     <div>
-                      <h4 className="font-black text-2xl text-gray-900 mb-3 group-hover:text-yellow-400 transition-colors">
+                      <h4 className='font-black text-2xl text-gray-900 mb-3 group-hover:text-yellow-400 transition-colors'>
                         {value.title}
                       </h4>
-                      <p className="text-gray-600 leading-relaxed mb-4">
+                      <p className='text-gray-600 leading-relaxed mb-4'>
                         {value.desc}
                       </p>
 
                       {/* Progress bar decoration */}
-                      <div className="h-1 bg-gray-100 rounded-full overflow-hidden">
-                        <div className="h-full bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700"></div>
+                      <div className='h-1 bg-gray-100 rounded-full overflow-hidden'>
+                        <div className='h-full bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-700'></div>
                       </div>
                     </div>
                   </div>
@@ -661,80 +767,99 @@ const Home = () => {
               </div>
 
               {/* Bottom CTA */}
-
             </div>
           </div>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section className="section-padding bg-white relative overflow-hidden">
+      <section className='section-padding bg-white relative overflow-hidden'>
         {/* Decorative elements */}
-        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-yellow-400 to-transparent opacity-30"></div>
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 right-10 w-32 h-32 border border-gray-100 rounded-full"></div>
-          <div className="absolute bottom-40 left-10 w-24 h-24 border border-gray-100 rounded-lg"></div>
+        <div className='absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-transparent via-yellow-400 to-transparent opacity-30'></div>
+        <div className='absolute inset-0 pointer-events-none'>
+          <div className='absolute top-20 right-10 w-32 h-32 border border-gray-100 rounded-full'></div>
+          <div className='absolute bottom-40 left-10 w-24 h-24 border border-gray-100 rounded-lg'></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="text-center mb-20">
-            <div className="fade-in-up inline-block px-4 py-2 bg-gray-50 rounded-full mb-6">
-              <span className="text-yellow-400 text-sm font-bold tracking-widest">WHAT WE DO</span>
+        <div className='max-w-7xl mx-auto px-6 relative z-10'>
+          <div className='text-center mb-20'>
+            <div className='fade-in-up inline-block px-4 py-2 bg-gray-50 rounded-full mb-6'>
+              <span className='text-yellow-400 text-sm font-bold tracking-widest'>
+                WHAT WE DO
+              </span>
             </div>
-            <h2 className="fade-in-up text-4xl md:text-6xl font-black text-gray-900 mb-6 stagger-1">
+            <h2 className='fade-in-up text-4xl md:text-6xl font-black text-gray-900 mb-6 stagger-1'>
               Our Services
             </h2>
-            <p className="fade-in-up text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed stagger-2">
-              Comprehensive construction solutions for government and private sector projects
+            <p className='fade-in-up text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed stagger-2'>
+              Comprehensive construction solutions for government and private
+              sector projects
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className='grid md:grid-cols-3 gap-8'>
             {services.map((service, i) => (
-              <div key={i} className="fade-in-up group" style={{ animationDelay: `${i * 0.15}s` }}>
-                <div className="relative h-full bg-white border border-gray-100 rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl transition-all duration-500">
+              <div
+                key={i}
+                className='fade-in-up group'
+                style={{ animationDelay: `${i * 0.15}s` }}
+              >
+                <div className='relative h-full bg-white border border-gray-100 rounded-3xl overflow-hidden hover-lift shadow-lg hover:shadow-2xl transition-all duration-500'>
                   {/* Image section */}
-                  <div className="relative h-64 overflow-hidden">
+                  <div className='relative h-64 overflow-hidden'>
                     <img
                       src={service.img}
                       alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-700'
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60"></div>
+                    <div className='absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-60'></div>
 
                     {/* Icon overlay */}
-                    <div className="absolute top-6 left-6">
-                      <div className="w-14 h-14 bg-yellow-400 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                        <service.icon className="text-gray-900" size={28} strokeWidth={2.5} />
+                    <div className='absolute top-6 left-6'>
+                      <div className='w-14 h-14 bg-yellow-400 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:rotate-6 transition-all duration-500'>
+                        <service.icon
+                          className='text-gray-900'
+                          size={28}
+                          strokeWidth={2.5}
+                        />
                       </div>
                     </div>
 
                     {/* Number badge */}
-                    <div className="absolute bottom-6 right-6">
-                      <div className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30">
-                        <span className="text-white font-black text-xl">{(i + 1).toString().padStart(2, '0')}</span>
+                    <div className='absolute bottom-6 right-6'>
+                      <div className='w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30'>
+                        <span className='text-white font-black text-xl'>
+                          {(i + 1).toString().padStart(2, '0')}
+                        </span>
                       </div>
                     </div>
                   </div>
 
                   {/* Content section */}
-                  <div className="p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-400 transition-colors">
+                  <div className='p-8'>
+                    <h3 className='text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-400 transition-colors'>
                       {service.title}
                     </h3>
 
-                    <p className="text-gray-600 leading-relaxed mb-6">
+                    <p className='text-gray-600 leading-relaxed mb-6'>
                       {service.desc}
                     </p>
 
                     {/* Features list */}
-                    <div className="space-y-3 mb-8">
+                    <div className='space-y-3 mb-8'>
                       {service.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-center gap-3 text-sm text-gray-700">
-                          <div className="flex-shrink-0 w-5 h-5 bg-yellow-400 bg-opacity-20 rounded-full flex items-center justify-center">
-                            <CheckCircle className="text-yellow-400" size={14} strokeWidth={3} />
+                        <div
+                          key={idx}
+                          className='flex items-center gap-3 text-sm text-gray-700'
+                        >
+                          <div className='flex-shrink-0 w-5 h-5 bg-yellow-400 bg-opacity-20 rounded-full flex items-center justify-center'>
+                            <CheckCircle
+                              className='text-yellow-400'
+                              size={14}
+                              strokeWidth={3}
+                            />
                           </div>
-                          <span className="font-medium">{feature}</span>
+                          <span className='font-medium'>{feature}</span>
                         </div>
                       ))}
                     </div>
@@ -749,96 +874,100 @@ const Home = () => {
                   </div>
 
                   {/* Hover effect line */}
-                  <div className="absolute bottom-0 left-0 w-full h-1 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                  <div className='absolute bottom-0 left-0 w-full h-1 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left'></div>
                 </div>
               </div>
             ))}
           </div>
 
-
           <Link
-            to="/services"
-            className="mx-auto w-fit mt-5 group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl hover:shadow-yellow-400/50">
+            to='/services'
+            className='mx-auto w-fit mt-5 group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl hover:shadow-yellow-400/50'
+          >
             Explore Service
-            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} />
+            <ArrowRight
+              className='group-hover:translate-x-1 transition-transform'
+              size={22}
+            />
           </Link>
         </div>
       </section>
 
       {/* PROJECTS */}
-      <section className="section-padding bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20">
-            <div className="fade-in-up inline-block px-4 py-2 bg-gray-50 rounded-full mb-6">
-              <span className="text-yellow-400 text-sm font-bold tracking-widest">PORTFOLIO</span>
+      <section className='section-padding bg-white'>
+        <div className='max-w-7xl mx-auto px-6'>
+          <div className='text-center mb-20'>
+            <div className='fade-in-up inline-block px-4 py-2 bg-gray-50 rounded-full mb-6'>
+              <span className='text-yellow-400 text-sm font-bold tracking-widest'>
+                PORTFOLIO
+              </span>
             </div>
-            <h2 className="fade-in-up text-4xl md:text-6xl font-black text-gray-900 mb-6 stagger-1">
+            <h2 className='fade-in-up text-4xl md:text-6xl font-black text-gray-900 mb-6 stagger-1'>
               Featured Projects
             </h2>
-            <p className="fade-in-up text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed stagger-2">
-              Showcasing excellence through completed infrastructure and development initiatives
+            <p className='fade-in-up text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed stagger-2'>
+              Showcasing excellence through completed infrastructure and
+              development initiatives
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {[
               {
                 img: './schoolsinDistrictKashmore.jpg',
-                title: "Construction of 15 schools in District Kashmore",
-                desc: "Construction of 15 SCHOOLS GROUND+2, GROUND +3 Civil Works, Plumbing Work and Electrification Works",
-                
+                title: 'Construction of 15 schools in District Kashmore',
+                desc: 'Construction of 15 SCHOOLS GROUND+2, GROUND +3 Civil Works, Plumbing Work and Electrification Works',
               },
               {
-                img: "./8project.jpg",
-                title: "Rehabilitation of Manchar Containing Bund",
-                desc: "Earthen Embankment,Approach Bunds, Stone Pitching, Stone Apron, Stone Filling",
-                
+                img: './8project.jpg',
+                title: 'Rehabilitation of Manchar Containing Bund',
+                desc: 'Earthen Embankment,Approach Bunds, Stone Pitching, Stone Apron, Stone Filling',
               },
               {
-                img: "./11project.jpg",
-                title: "Construction of Shalmani Dam",
-                desc: "Earthen Embankment, Approach Bunds, Stone Pitching,Stone Apron, Stone Filling,RCC,PCC,Excavation (Earthwork) in Hard Rocks & Soft Soil,Earthwork Filling",
-                
+                img: './11project.jpg',
+                title: 'Construction of Shalmani Dam',
+                desc: 'Earthen Embankment, Approach Bunds, Stone Pitching,Stone Apron, Stone Filling,RCC,PCC,Excavation (Earthwork) in Hard Rocks & Soft Soil,Earthwork Filling',
               },
             ].map((project, i) => (
-              <div key={i} className="fade-in-up group" style={{ animationDelay: `${i * 0.15}s` }}>
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl hover-lift">
-                  <div className="aspect-[4/5] relative">
+              <div
+                key={i}
+                className='fade-in-up group'
+                style={{ animationDelay: `${i * 0.15}s` }}
+              >
+                <div className='relative rounded-3xl overflow-hidden shadow-2xl hover-lift'>
+                  <div className='aspect-[4/5] relative'>
                     <img
                       src={project.img}
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-700'
                     />
-                    <div className="absolute inset-0 project-card-overlay"></div>
+                    <div className='absolute inset-0 project-card-overlay'></div>
 
-                   
-
-                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                      <h4 className="text-2xl font-bold mb-3 group-hover:text-yellow-400 transition-colors">
+                    <div className='absolute bottom-0 left-0 right-0 p-8 text-white'>
+                      <h4 className='text-2xl font-bold mb-3 group-hover:text-yellow-400 transition-colors'>
                         {project.title}
                       </h4>
-                      <p className="text-gray-300 leading-relaxed mb-4">
+                      <p className='text-gray-300 leading-relaxed mb-4'>
                         {project.desc}
                       </p>
-
                     </div>
                   </div>
                 </div>
               </div>
             ))}
-
           </div>
           <Link
-            to="/projects"
-            className="mx-auto w-fit mt-5 group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl hover:shadow-yellow-400/50">
+            to='/projects'
+            className='mx-auto w-fit mt-5 group px-10 py-5 bg-yellow-400 text-gray-900 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 flex items-center justify-center gap-3 hover:gap-4 shadow-2xl hover:shadow-yellow-400/50'
+          >
             View Our Projects
-            <ArrowRight className="group-hover:translate-x-1 transition-transform" size={22} />
+            <ArrowRight
+              className='group-hover:translate-x-1 transition-transform'
+              size={22}
+            />
           </Link>
         </div>
       </section>
-
-
-
     </div>
   );
 };
